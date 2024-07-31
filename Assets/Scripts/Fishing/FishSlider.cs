@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class FishSlider : MonoBehaviour
-{
+{ 
     [Header("Object References")]
     [SerializeField] private Slider slider;
 
