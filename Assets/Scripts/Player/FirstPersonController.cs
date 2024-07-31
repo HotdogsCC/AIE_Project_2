@@ -200,6 +200,11 @@ namespace StarterAssets
 
 		private void JumpAndGravity()
 		{
+			if (JumpTimeout == 0 && _input.jump)
+			{
+				_verticalVelocity = JumpHeight;
+			}
+
 			if (Grounded)
 			{
 				// reset the fall timeout timer
