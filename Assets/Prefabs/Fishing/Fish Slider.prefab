@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinValue: -20
   m_MaxValue: 120
   m_WholeNumbers: 0
-  m_Value: 21.2
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_MinValue: -20
   m_MaxValue: 120
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 55.4
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5990566, g: 0.88734555, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5990566, g: 0.88734555, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -950,13 +950,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5746651793268973217}
   - component: {fileID: 5746651793268973222}
+  - component: {fileID: 7771643533036695027}
   m_Layer: 5
   m_Name: Fish Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5746651793268973217
 RectTransform:
   m_ObjectHideFlags: 0
@@ -999,3 +1000,23 @@ MonoBehaviour:
   maxRaiseSpeed: 2
   velocity: 0
   displacement: 100
+--- !u!114 &7771643533036695027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746651793268973216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5a38c71f705ec41b2d3ca7a6ac7655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptableRange: 20
+  startingFishPercentage: 30
+  progressDecreaseFactor: 20
+  progressIncreaseFactor: 10
+  fishHighlightSlider: {fileID: 5746651792071910794}
+  fishLocationSlider: {fileID: 4942986478175793583}
+  highlighter: {fileID: 5746651791867904142}
+  debugText: {fileID: 0}
