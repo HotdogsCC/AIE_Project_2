@@ -2060,6 +2060,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5746651793268973222, guid: 6ca6491c0275f734d9de755fa9d7011d,
+        type: 3}
+      propertyPath: gravity
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746651793268973222, guid: 6ca6491c0275f734d9de755fa9d7011d,
+        type: 3}
+      propertyPath: jumpStrength
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746651793268973222, guid: 6ca6491c0275f734d9de755fa9d7011d,
+        type: 3}
+      propertyPath: maxFallSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746651793268973222, guid: 6ca6491c0275f734d9de755fa9d7011d,
+        type: 3}
+      propertyPath: maxRaiseSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7771643533036695027, guid: 6ca6491c0275f734d9de755fa9d7011d,
         type: 3}
       propertyPath: debugText
