@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -15,11 +16,13 @@ public class FishRodMinigameManager : MonoBehaviour
     [SerializeField] private float progressIncreaseFactor = 1f;
 
     [Header("Object references")]
+    [SerializeField] private GameObject ui;
     [SerializeField] private Slider fishHighlightSlider;
     [SerializeField] private Slider fishLocationSlider;
     [SerializeField] private Image highlighter;
 
     private float catchProgressPercentage;
+    private bool isGameRunning = false;
 
     //REMOVE BEFORE RELEASE - debug stuff
     [SerializeField] private TextMeshProUGUI debugText;
@@ -32,6 +35,14 @@ public class FishRodMinigameManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        if (isGameRunning)
+        {
+           GameLoop();
+        }
+    }
+
+    private void GameLoop()
     {
         //checks that the highlight is touching the fish
         if (fishHighlightSlider.value >= fishLocationSlider.value - acceptableRange
@@ -59,5 +70,12 @@ public class FishRodMinigameManager : MonoBehaviour
 
         //REMOVE BEFORE RELEASE - debug stuff
         debugText.text = catchProgressPercentage.ToString();
+    }
+
+    public void StartMinigame()
+    {
+        isGameRunning = true;
+        ui.SetActive(true);
+        FindObjectOfType<FirstPersonController>().enabled = false;
     }
 }

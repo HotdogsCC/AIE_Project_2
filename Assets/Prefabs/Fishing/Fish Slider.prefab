@@ -146,8 +146,8 @@ RectTransform:
   m_Father: {fileID: 8973392751306798026}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -351,7 +351,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -426,8 +426,8 @@ RectTransform:
   m_Father: {fileID: 5746651792970232237}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5385714}
+  m_AnchorMax: {x: 1, y: 0.5385714}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 204.6}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -596,7 +596,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.5385714}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -950,7 +950,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5746651793268973217}
   - component: {fileID: 5746651793268973222}
-  - component: {fileID: 7771643533036695027}
   m_Layer: 5
   m_Name: Fish Slider
   m_TagString: Untagged
@@ -993,30 +992,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 5746651792071910794}
-  jumpStrength: 0.2
-  gravity: -0.4
+  jumpStrength: 0.15
+  gravity: -0.3
   bounciness: 0.25
-  maxFallSpeed: 2
-  maxRaiseSpeed: 2
+  maxFallSpeed: 1
+  maxRaiseSpeed: 1.5
   velocity: 0
   displacement: 100
---- !u!114 &7771643533036695027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5746651793268973216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca5a38c71f705ec41b2d3ca7a6ac7655, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceptableRange: 20
-  startingFishPercentage: 30
-  progressDecreaseFactor: 20
-  progressIncreaseFactor: 10
-  fishHighlightSlider: {fileID: 5746651792071910794}
-  fishLocationSlider: {fileID: 4942986478175793583}
-  highlighter: {fileID: 5746651791867904142}
-  debugText: {fileID: 0}
