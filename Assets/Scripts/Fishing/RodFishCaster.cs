@@ -39,6 +39,7 @@ public class RodFishCaster : MonoBehaviour
         //makes it so the buoy has gravity and chucks a force on it
         isCast = true;
         buoy.transform.SetParent(null);
+        buoy.transform.rotation = Quaternion.Euler(Vector3.zero);
         Rigidbody rb = buoy.GetComponent<Rigidbody>();
         rb.useGravity = true;
         rb.AddForce(Camera.main.transform.forward * throwForce);
@@ -53,7 +54,7 @@ public class RodFishCaster : MonoBehaviour
         Rigidbody rb = buoy.GetComponent<Rigidbody>();
         rb.useGravity = false;
         rb.velocity = Vector3.zero;
-        buoy.transform.rotation = Quaternion.Euler(Vector3.zero);
+        buoy.transform.localRotation = Quaternion.Euler(Vector3.zero);
     }
 
     //Makes it so the fishing line is drawn right before the frame is set to render, that way it looks good!

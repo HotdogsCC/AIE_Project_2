@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Schema;
 using UnityEngine;
 
 public class FishMovement : MonoBehaviour
 {
     private Rigidbody rb;
     private Vector3 targetPos;
+    bool iSeeRod = false;
 
+    [Header("Swiming Attributes")]
     [SerializeField] float minSwimDistance = 5f;
     [SerializeField] float maxSwimDistance = 10f;
     [SerializeField] float minSwimSpeed = 0.5f;
     [SerializeField] float maxSwimSpeed = 5f;
     [SerializeField] float swimDeceleration = 1f;
+    [SerializeField] float maxHeight = -2f;
+
+    [Header("Fishing Attributes")]
+    [SerializeField] float chanceOfMovingToRod;
 
     float swimSpeed;
     // Start is called before the first frame update
@@ -62,7 +69,7 @@ public class FishMovement : MonoBehaviour
         }
 
         //Creates the target position from the target direction
-        targetPos = new Vector3(transform.position.x + xTarg, transform.position.y + yTarg, transform.position.z + zTarg);
+        targetPos = new Vector3(transform.position.x + xTarg, Mathf.Clamp(transform.position.y + yTarg, -999, maxHeight), transform.position.z + zTarg);
 
         transform.rotation = Quaternion.LookRotation(new Vector3(xTarg, yTarg, zTarg));     
     }
