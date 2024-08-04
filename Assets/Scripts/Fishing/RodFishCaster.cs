@@ -22,6 +22,7 @@ public class RodFishCaster : MonoBehaviour
         {
             if (isCast)
             {
+                FindObjectOfType<FishRodMinigameManager>().EndMinigame();
                 ReelLine();
             }
             else
@@ -38,6 +39,8 @@ public class RodFishCaster : MonoBehaviour
     {
         //makes it so the buoy has gravity and chucks a force on it
         isCast = true;
+        buoy.GetComponent<Buoyancy>().enabled = true;
+        buoy.GetComponentInChildren<SphereCollider>().enabled = true;
         buoy.transform.SetParent(null);
         buoy.transform.rotation = Quaternion.Euler(Vector3.zero);
         Rigidbody rb = buoy.GetComponent<Rigidbody>();
@@ -46,9 +49,18 @@ public class RodFishCaster : MonoBehaviour
         rb.AddForce(0, upForce, 0);
     }
 
-    private void ReelLine()
+    public void ReelLine()
     {
+        buoy.GetComponent<Buoyancy>().enabled = false;
+        buoy.GetComponentInChildren<SphereCollider>().enabled = false;
         isCast = false;
+        buoy.GetComponent<Animator>().SetBool("inWater", false);
+        FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
+        foreach (var fish in fishies)
+        {
+            fish.GetComponent<SphereCollider>().enabled = false;
+            fish.GetComponentInParent<FishMovement>().IDontSeeRod();
+        }
         buoy.transform.SetParent(endOfFishingLinePos);
         buoy.transform.localPosition = Vector3.zero;
         Rigidbody rb = buoy.GetComponent<Rigidbody>();

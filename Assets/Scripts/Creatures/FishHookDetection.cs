@@ -9,7 +9,14 @@ public class FishHookDetection : MonoBehaviour
     {
         if(other.tag == "hook")
         {
-            Debug.Log("skibidi");
+            GetComponentInParent<FishMovement>().ISeeRod(other.transform.position);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "hook")
+        {
+            GetComponentInParent<FishMovement>().IDontSeeRod();
         }
     }
 }

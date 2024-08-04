@@ -59,12 +59,12 @@ public class FishRodMinigameManager : MonoBehaviour
 
         if (catchProgressPercentage >= 100)
         {
-            //you win
+            EndMinigame();
             Debug.Log("you win");
         }
         if (catchProgressPercentage <= 0)
         {
-            //you lose
+            EndMinigame();
             Debug.Log("you lose");
         }
 
@@ -74,8 +74,17 @@ public class FishRodMinigameManager : MonoBehaviour
 
     public void StartMinigame()
     {
+        catchProgressPercentage = startingFishPercentage;
         isGameRunning = true;
         ui.SetActive(true);
         FindObjectOfType<FirstPersonController>().enabled = false;
+    }
+
+    public void EndMinigame()
+    {
+        isGameRunning = false;
+        ui.SetActive(false);
+        FindObjectOfType<FirstPersonController>().enabled = true;
+        FindObjectOfType<RodFishCaster>().ReelLine();
     }
 }

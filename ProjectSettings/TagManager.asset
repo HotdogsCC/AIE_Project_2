@@ -8,6 +8,7 @@ TagManager:
   - water
   - fish
   - hook
+  - fishHookBox
   layers:
   - Default
   - TransparentFX

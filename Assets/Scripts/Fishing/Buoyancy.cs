@@ -23,14 +23,14 @@ public class Buoyancy : MonoBehaviour
             rb.useGravity = false;
             rb.velocity = Vector3.zero;
             animator.SetBool("inWater", true);
+            FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
+            foreach (var fish in fishies)
+            {
+                fish.GetComponent<SphereCollider>().enabled = true;
+                fish.GetComponentInParent<BoxCollider>().enabled = true;
+            }
             //manager.StartMinigame();
         }
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "water")
-        {
-            animator.SetBool("inWater", false);
-        }
-    }
+
 }

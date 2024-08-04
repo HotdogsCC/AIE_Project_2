@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Schema;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FishMovement : MonoBehaviour
 {
     private Rigidbody rb;
     private Vector3 targetPos;
+    private Vector3 hookPos;
     bool iSeeRod = false;
 
     [Header("Swiming Attributes")]
@@ -18,6 +20,7 @@ public class FishMovement : MonoBehaviour
     [SerializeField] float maxHeight = -2f;
 
     [Header("Fishing Attributes")]
+    [Range(0f, 100f)]
     [SerializeField] float chanceOfMovingToRod;
 
     float swimSpeed;
@@ -42,35 +45,74 @@ public class FishMovement : MonoBehaviour
         }
         else
         {
-            swimSpeed -= swimDeceleration * Time.deltaTime;
-            swimSpeed = Mathf.Clamp(swimSpeed, minSwimSpeed, maxSwimSpeed);
+            if (!iSeeRod)
+            {
+                swimSpeed -= swimDeceleration * Time.deltaTime;
+                swimSpeed = Mathf.Clamp(swimSpeed, minSwimSpeed, maxSwimSpeed);
+            }
         }
     }
 
-    private void CalculateNewDirection()
+    public void CalculateNewDirection()
     {
-        //Randomly picks a target position from each axis
-        float xTarg = Random.Range(minSwimDistance, maxSwimDistance);
-        float yTarg = Random.Range(minSwimDistance, maxSwimDistance);
-        float zTarg = Random.Range(minSwimDistance, maxSwimDistance);
-
-        //Makes some negative
-        if(Random.Range(0,2) == 1)
+        if (iSeeRod)
         {
-            xTarg = -xTarg;
+            targetPos = hookPos;
+            transform.rotation = Quaternion.LookRotation(targetPos - transform.position);
         }
-        if (Random.Range(0, 2) == 1)
+        else
         {
-            yTarg = -yTarg;
+            //Randomly picks a target position from each axis
+            float xTarg = Random.Range(minSwimDistance, maxSwimDistance);
+            float yTarg = Random.Range(minSwimDistance, maxSwimDistance);
+            float zTarg = Random.Range(minSwimDistance, maxSwimDistance);
+
+            //Makes some negative
+            if (Random.Range(0, 2) == 1)
+            {
+                xTarg = -xTarg;
+            }
+            if (Random.Range(0, 2) == 1)
+            {
+                yTarg = -yTarg;
+            }
+            if (Random.Range(0, 2) == 1)
+            {
+                zTarg = -zTarg;
+            }
+
+            //Creates the target position from the target direction
+            targetPos = new Vector3(transform.position.x + xTarg, Mathf.Clamp(transform.position.y + yTarg, -999, maxHeight), transform.position.z + zTarg);
+
+            transform.rotation = Quaternion.LookRotation(new Vector3(xTarg, yTarg, zTarg));
         }
-        if (Random.Range(0, 2) == 1)
+    }
+
+    public void ISeeRod(Vector3 inputHookPos)
+    {
+        iSeeRod = true;
+        hookPos = inputHookPos;
+    }
+
+    public void IDontSeeRod()
+    {
+        iSeeRod = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.transform.tag == "hook")
         {
-            zTarg = -zTarg;
+            FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
+            foreach (var fish in fishies)
+            {
+                fish.GetComponent<SphereCollider>().enabled = false;
+                fish.GetComponentInParent<BoxCollider>().enabled = false;
+                fish.GetComponentInParent<FishMovement>().IDontSeeRod();
+                fish.GetComponentInParent<FishMovement>().CalculateNewDirection();
+            }
+            collision.gameObject.transform.SetParent(transform);
+            FindObjectOfType<FishRodMinigameManager>().StartMinigame();
         }
-
-        //Creates the target position from the target direction
-        targetPos = new Vector3(transform.position.x + xTarg, Mathf.Clamp(transform.position.y + yTarg, -999, maxHeight), transform.position.z + zTarg);
-
-        transform.rotation = Quaternion.LookRotation(new Vector3(xTarg, yTarg, zTarg));     
     }
 }
