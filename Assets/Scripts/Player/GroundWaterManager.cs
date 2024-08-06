@@ -41,6 +41,7 @@ public class GroundWaterManager : MonoBehaviour
     public float groundGroundedRadius = 0.5f;
     [Tooltip("What layers the character uses as ground")]
     public LayerMask groundGroundLayers;
+    public float groundTerminalVelocity = 53.0f;
     [Space(20)]
 
     [Header("Water Variables")]
@@ -75,6 +76,8 @@ public class GroundWaterManager : MonoBehaviour
     public float waterGroundedRadius = 0.5f;
     [Tooltip("What layers the character uses as ground")]
     public LayerMask waterGroundLayers;
+
+    public float waterTerminalVel = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -118,6 +121,7 @@ public class GroundWaterManager : MonoBehaviour
             firstPersonController.GroundedOffset = waterGroundedOffset;
             firstPersonController.GroundedRadius = waterGroundedRadius;
             //firstPersonController.GroundLayers = waterGroundLayers;
+            firstPersonController._terminalVelocity = waterTerminalVel;
         }
         else
         {
@@ -131,6 +135,7 @@ public class GroundWaterManager : MonoBehaviour
             firstPersonController.GroundedOffset = groundGroundedOffset;
             firstPersonController.GroundedRadius = groundGroundedRadius;
             //firstPersonController.GroundLayers = groundGroundLayers;
+            firstPersonController._terminalVelocity = groundTerminalVelocity;
         }
     }
 }

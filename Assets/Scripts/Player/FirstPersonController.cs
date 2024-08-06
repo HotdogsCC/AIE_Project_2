@@ -20,6 +20,7 @@ namespace StarterAssets
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
+		public float waterResistance = 10f;
 
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
@@ -57,8 +58,8 @@ namespace StarterAssets
 		// player
 		private float _speed;
 		private float _rotationVelocity;
-		private float _verticalVelocity;
-		private float _terminalVelocity = 53.0f;
+		public float _verticalVelocity;
+		public float _terminalVelocity = 53.0f;
 
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
@@ -194,13 +195,23 @@ namespace StarterAssets
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 
+			//charlie charlie cakhrealkjflkds
+			if(JumpTimeout == 0)
+			{
+				//makes the input in the direction the camera is facing when under water
+				inputDirection = _mainCamera.transform.forward * _input.move.y;
+            }
+
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 		}
 
 		private void JumpAndGravity()
 		{
-			if (JumpTimeout == 0 && _input.jump)
+			//CHARLIE CHARLIE CHARLIE CHARLIE 
+			//hi
+			//This is the stuff that activates when swimming is on
+			if (JumpTimeout == 0 && Input.GetKey(KeyCode.Space))
 			{
 				_verticalVelocity = JumpHeight;
 			}
@@ -248,7 +259,15 @@ namespace StarterAssets
 			if (_verticalVelocity < _terminalVelocity)
 			{
 				_verticalVelocity += Gravity * Time.deltaTime;
+                //CHARliE CHAR<LIE CHARLIE
+                //means we are under wat4er
+                if (JumpTimeout == 0)
+				{
+                    _verticalVelocity -= _verticalVelocity * Time.deltaTime * waterResistance;
+                }
 			}
+
+			
 		}
 
 		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)

@@ -682,6 +682,7 @@ MonoBehaviour:
   SprintSpeed: 6
   RotationSpeed: 1
   SpeedChangeRate: 10
+  waterResistance: 3
   JumpHeight: 1.2
   Gravity: -15
   JumpTimeout: 0.1
@@ -695,6 +696,8 @@ MonoBehaviour:
   CinemachineCameraTarget: {fileID: 1079729162442090979}
   TopClamp: 89
   BottomClamp: -89
+  _verticalVelocity: 0
+  _terminalVelocity: 53
 --- !u!114 &3237388423999502920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,11 +1335,12 @@ MonoBehaviour:
   groundGroundLayers:
     serializedVersion: 2
     m_Bits: 0
+  groundTerminalVelocity: 53
   waterMoveSpeed: 2
   waterSprintSpeed: 3
   waterRotationSpeed: 1
   waterSpeedChangeRate: 5
-  waterJumpHeight: 1
+  waterJumpHeight: 2
   waterGravity: -0.5
   waterJumpTimeout: 0
   waterFallTimeout: 0.15
@@ -1346,6 +1350,7 @@ MonoBehaviour:
   waterGroundLayers:
     serializedVersion: 2
     m_Bits: 0
+  waterTerminalVel: 3
 --- !u!1001 &5308507779830720780
 PrefabInstance:
   m_ObjectHideFlags: 0
