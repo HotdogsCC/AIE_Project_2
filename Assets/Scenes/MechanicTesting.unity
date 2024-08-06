@@ -1796,11 +1796,6 @@ PrefabInstance:
       propertyPath: near clip plane
       value: 0.002
       objectReference: {fileID: 0}
-    - target: {fileID: 6794300847918038180, guid: b14943da5f6230b4e9b7d6b6528a50c3,
-        type: 3}
-      propertyPath: waterMoveSpeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9025774510373290980, guid: b14943da5f6230b4e9b7d6b6528a50c3,
         type: 3}
       propertyPath: m_RootOrder

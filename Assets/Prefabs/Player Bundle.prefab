@@ -1336,7 +1336,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   groundTerminalVelocity: 53
-  waterMoveSpeed: 2
+  waterMoveSpeed: 10
   waterSprintSpeed: 3
   waterRotationSpeed: 1
   waterSpeedChangeRate: 5
