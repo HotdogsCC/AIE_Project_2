@@ -49,4 +49,10 @@ public class FishIconMover : MonoBehaviour
             movingUp = !movingUp;
         }
     }
+
+    public void SetParameters(float _moveSpeed, int _chanceOfMoveDirection)
+    {
+        moveSpeed = _moveSpeed;
+        chanceOfChangingDirection = _chanceOfMoveDirection;
+    }
 }

@@ -17,6 +17,7 @@ public class FishRodMinigameManager : MonoBehaviour
 
     [Header("Object references")]
     [SerializeField] private GameObject ui;
+    [SerializeField] FishIconMover fishIconMover;
     [SerializeField] private Slider fishHighlightSlider;
     [SerializeField] private Slider fishLocationSlider;
     [SerializeField] private Image highlighter;
@@ -72,8 +73,9 @@ public class FishRodMinigameManager : MonoBehaviour
         debugText.text = catchProgressPercentage.ToString();
     }
 
-    public void StartMinigame()
+    public void StartMinigame(float _moveSpeed, int _chanceOfMoveDirection)
     {
+        fishIconMover.SetParameters(_moveSpeed, _chanceOfMoveDirection);
         catchProgressPercentage = startingFishPercentage;
         isGameRunning = true;
         ui.SetActive(true);

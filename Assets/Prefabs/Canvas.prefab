@@ -332,6 +332,7 @@ MonoBehaviour:
   progressDecreaseFactor: 20
   progressIncreaseFactor: 15
   ui: {fileID: 6623862144674758241}
+  fishIconMover: {fileID: 4576409056029650878}
   fishHighlightSlider: {fileID: 6623862145943520430}
   fishLocationSlider: {fileID: 5815729171102044299}
   highlighter: {fileID: 6623862146284790186}

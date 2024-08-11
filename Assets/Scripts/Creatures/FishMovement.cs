@@ -20,8 +20,10 @@ public class FishMovement : MonoBehaviour
     [SerializeField] float maxHeight = -2f;
 
     [Header("Fishing Attributes")]
-    [Range(0f, 100f)]
-    [SerializeField] float chanceOfMovingToRod;
+    [SerializeField] float fishIconMoveSpeed = 25f;
+    [SerializeField] int fishIconChanceOfChangingDirection = 3;
+    //[Range(0f, 100f)]
+    //[SerializeField] float chanceOfMovingToRod;
 
     float swimSpeed;
     // Start is called before the first frame update
@@ -112,7 +114,7 @@ public class FishMovement : MonoBehaviour
                 fish.GetComponentInParent<FishMovement>().CalculateNewDirection();
             }
             collision.gameObject.transform.SetParent(transform);
-            FindObjectOfType<FishRodMinigameManager>().StartMinigame();
+            FindObjectOfType<FishRodMinigameManager>().StartMinigame(fishIconMoveSpeed, fishIconChanceOfChangingDirection);
         }
     }
 }
