@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class RodFishCaster : MonoBehaviour
 {
     [SerializeField] private float throwForce;
     [SerializeField] private float upForce;
+    [SerializeField] private float chargeSpeed = 5f;
     [SerializeField] private Transform topOfFishingLine;
     [SerializeField] private Transform endOfFishingLinePos;
     [SerializeField] private Transform buoyGO;
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private GameObject buoy;
     private bool isCast = false;
+    private float chargeForce = 0;
 
 
     // Update is called once per frame
@@ -27,9 +30,25 @@ public class RodFishCaster : MonoBehaviour
             }
             else
             {
+                chargeForce = 0;
+            }
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            chargeForce += chargeSpeed * Time.deltaTime;
+        }
+
+        if(Input.GetMouseButtonUp(0))
+        {
+            if (!isCast)
+            {
                 CastLine();
             }
-
+            else
+            {
+                isCast = false;
+            }
             
         }
     }
@@ -45,15 +64,14 @@ public class RodFishCaster : MonoBehaviour
         buoy.transform.rotation = Quaternion.Euler(Vector3.zero);
         Rigidbody rb = buoy.GetComponent<Rigidbody>();
         rb.useGravity = true;
-        rb.AddForce(Camera.main.transform.forward * throwForce);
-        rb.AddForce(0, upForce, 0);
+        rb.AddForce(Camera.main.transform.forward * (throwForce + chargeForce));
+        rb.AddForce(0, upForce + chargeForce, 0);
     }
 
     public void ReelLine()
     {
         buoy.GetComponent<Buoyancy>().enabled = false;
         buoy.GetComponentInChildren<SphereCollider>().enabled = false;
-        isCast = false;
         buoy.GetComponent<Animator>().SetBool("inWater", false);
         FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
         foreach (var fish in fishies)

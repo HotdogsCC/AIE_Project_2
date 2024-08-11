@@ -131,8 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c676454dd5c09d644bdf88661b5124aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 150
-  upForce: 200
+  throwForce: 35
+  upForce: 50
+  chargeSpeed: 300
   topOfFishingLine: {fileID: 1101716111}
   endOfFishingLinePos: {fileID: 575266872}
   buoyGO: {fileID: 1253791944}
