@@ -783,6 +783,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6623862144464633732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5746651793268973216, guid: 6ca6491c0275f734d9de755fa9d7011d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1453707055596577060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4576409056029650878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6623862144464633732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e584deb27f318740a49226558cfdaa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 5815729171102044299}
+  moveSpeed: 25
+  chanceOfChangingDirection: 3
+  movingUp: 1
 --- !u!224 &6623862144464633733 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5746651793268973217, guid: 6ca6491c0275f734d9de755fa9d7011d,
