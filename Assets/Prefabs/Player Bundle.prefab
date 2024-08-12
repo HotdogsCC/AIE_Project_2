@@ -100,7 +100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &190154001
 Transform:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &248059401
 Transform:
   m_ObjectHideFlags: 0
@@ -601,7 +601,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1337,11 +1337,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   groundTerminalVelocity: 53
-  waterMoveSpeed: 10
-  waterSprintSpeed: 3
+  waterMoveSpeed: 1
+  waterSprintSpeed: 1
   waterRotationSpeed: 1
   waterSpeedChangeRate: 5
-  waterJumpHeight: 2
+  waterJumpHeight: 1.5
   waterGravity: -0.5
   waterJumpTimeout: 0
   waterFallTimeout: 0.15
@@ -1414,6 +1414,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9dbc5849ae376344b8bb7310a052f199,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ee718ad5aa530d4a80eace63f845a8f, type: 2}
     - target: {fileID: 919132149155446097, guid: 9dbc5849ae376344b8bb7310a052f199,
         type: 3}
       propertyPath: m_Name

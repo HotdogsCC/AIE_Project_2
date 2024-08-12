@@ -194,17 +194,20 @@ namespace StarterAssets
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
-
-			//charlie charlie cakhrealkjflkds
-			if(JumpTimeout == 0)
+            _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            //charlie charlie cakhrealkjflkds
+            if (JumpTimeout == 0)
 			{
+				_speed = targetSpeed;
 				//makes the input in the direction the camera is facing when under water
 				inputDirection = _mainCamera.transform.forward * _input.move.y;
+                _controller.Move(inputDirection * (_speed * Time.deltaTime));
             }
 
 			// move the player
-			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
-		}
+			
+			
+        }
 
 		private void JumpAndGravity()
 		{
