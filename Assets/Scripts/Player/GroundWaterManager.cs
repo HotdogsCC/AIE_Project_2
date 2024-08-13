@@ -122,6 +122,12 @@ public class GroundWaterManager : MonoBehaviour
             firstPersonController.GroundedRadius = waterGroundedRadius;
             //firstPersonController.GroundLayers = waterGroundLayers;
             firstPersonController._terminalVelocity = waterTerminalVel;
+            FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
+            foreach (var fish in fishies)
+            {
+                fish.GetComponent<SphereCollider>().enabled = true;
+                fish.GetComponentInParent<BoxCollider>().enabled = true;
+            }
         }
         else
         {

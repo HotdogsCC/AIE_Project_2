@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 356593923}
   - component: {fileID: 356593924}
   - component: {fileID: 356593925}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: HookDetectionHitbox
   m_TagString: fishHookBox
   m_Icon: {fileID: 0}

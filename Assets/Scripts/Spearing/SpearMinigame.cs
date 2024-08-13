@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class SpearMinigame : MonoBehaviour
 {
     [SerializeField] private GameObject cursor;
+
+    private bool isGameRunning;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +31,6 @@ public class SpearMinigame : MonoBehaviour
         {
             Mouse.current.WarpCursorPosition(new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height)));
         }
-
-
         
     }
 
