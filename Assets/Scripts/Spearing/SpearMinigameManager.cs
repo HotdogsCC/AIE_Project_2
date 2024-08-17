@@ -1,18 +1,21 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SpearMinigameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject spearMinigame;
     // Start is called before the first frame update
-    void Start()
+    public void StartMinigame()
     {
-        
+        spearMinigame.SetActive(true);
+        FindObjectOfType<FirstPersonController>().enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EndMinigame()
     {
-        
+        spearMinigame.SetActive(false);
+        FindObjectOfType<FirstPersonController>().enabled = true;
     }
 }
