@@ -1808,8 +1808,8 @@ MonoBehaviour:
   maxSwimSpeed: 4
   swimDeceleration: 2
   maxHeight: 2
-  fishIconMoveSpeed: 25
-  fishIconChanceOfChangingDirection: 3
+  fishIconMoveSpeed: 30
+  fishIconChanceOfChangingDirection: 5
 --- !u!4 &448548637956112209
 Transform:
   m_ObjectHideFlags: 0
@@ -2236,6 +2236,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 190154000, guid: b14943da5f6230b4e9b7d6b6528a50c3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 248059400, guid: b14943da5f6230b4e9b7d6b6528a50c3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 99453937293896120, guid: b14943da5f6230b4e9b7d6b6528a50c3,
         type: 3}
       propertyPath: near clip plane
