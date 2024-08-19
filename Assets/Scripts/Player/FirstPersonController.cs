@@ -200,8 +200,8 @@ namespace StarterAssets
 			{
 				_speed = targetSpeed;
 				//makes the input in the direction the camera is facing when under water
-				inputDirection = _mainCamera.transform.forward * _input.move.y;
-                _controller.Move(inputDirection * (_speed * Time.deltaTime));
+				inputDirection = _mainCamera.transform.forward * _input.move.y + _mainCamera.transform.right * _input.move.x;
+                _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime));
             }
 
 			// move the player

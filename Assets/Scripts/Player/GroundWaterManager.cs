@@ -1,6 +1,7 @@
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class GroundWaterManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class GroundWaterManager : MonoBehaviour
     [Header("Important Stuff")]
     [SerializeField] private bool inWater = false;
     [SerializeField] private FirstPersonController firstPersonController;
+    [SerializeField] private GameObject fishingRod;
+    [SerializeField] private GameObject spear;
 
     [Header("Ground Variables")]
     [Space(10)]
@@ -128,6 +131,8 @@ public class GroundWaterManager : MonoBehaviour
                 fish.GetComponent<SphereCollider>().enabled = true;
                 fish.GetComponentInParent<BoxCollider>().enabled = true;
             }
+            spear.SetActive(true);
+            fishingRod.SetActive(false);
         }
         else
         {
@@ -142,6 +147,8 @@ public class GroundWaterManager : MonoBehaviour
             firstPersonController.GroundedRadius = groundGroundedRadius;
             //firstPersonController.GroundLayers = groundGroundLayers;
             firstPersonController._terminalVelocity = groundTerminalVelocity;
+            spear.SetActive(false);
+            fishingRod.SetActive(true);
         }
     }
 }

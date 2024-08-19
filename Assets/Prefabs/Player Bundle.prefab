@@ -1355,6 +1355,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inWater: 0
   firstPersonController: {fileID: 4615605528537092287}
+  fishingRod: {fileID: 190154000}
+  spear: {fileID: 248059400}
   groundMoveSpeed: 4
   groundSprintSpeed: 6
   groundRotationSpeed: 1
