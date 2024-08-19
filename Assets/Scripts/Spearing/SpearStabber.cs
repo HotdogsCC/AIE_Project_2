@@ -7,6 +7,7 @@ public class SpearStabber : MonoBehaviour
     private Animator animator;
     private SpearMinigameManager manager;
     [SerializeField] private Transform spearTip;
+    private bool animationFinished = true;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +18,10 @@ public class SpearStabber : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && animationFinished)
         {
             animator.SetTrigger("Attack");
+            animationFinished = false;
         }
     }
     public void SpearStab()
@@ -38,5 +40,10 @@ public class SpearStabber : MonoBehaviour
             Debug.Log("i hit som,ething ");
             Debug.Log(hit.transform.name);
         }
+    }
+
+    public void AnimationFinished()
+    {
+        animationFinished = true;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class SpearMinigame : MonoBehaviour
 {
@@ -63,6 +64,7 @@ public class SpearMinigame : MonoBehaviour
         }
 
         bar.localScale = new Vector3 ((_barHealth / barHealth * 10), 0.1f, 1f);
+        bar.GetComponent<Image>().color = new Color(1 - _barHealth / barHealth, _barHealth/barHealth, 0);
 
     }
 
