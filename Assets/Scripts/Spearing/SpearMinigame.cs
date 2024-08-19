@@ -6,32 +6,64 @@ using UnityEngine.InputSystem;
 
 public class SpearMinigame : MonoBehaviour
 {
+    [SerializeField] private SpearMinigameManager manager;
     [SerializeField] private GameObject cursor;
+    [SerializeField] private Transform bar;
+
+    [SerializeField] private float barHealth = 10f;
+    [SerializeField] private float barDeclineSpeed = 3f;
+    [SerializeField] private float barSpeedIncreaseFactor = 1.25f;
+    [SerializeField] private int numToWin = 10;
+
+    private float _barHealth = 10f;
+    private float _barDeclineSpeed = 10f;
+    private int _numToWin = 10;
 
     private bool isGameRunning;
     // Start is called before the first frame update
     void Start()
     {
-        
+        manager = FindObjectOfType<SpearMinigameManager>();
     }
 
     private void OnEnable()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+        _barHealth = barHealth;
+        _barDeclineSpeed = barDeclineSpeed;
+        _numToWin = numToWin + 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = false;
         cursor.transform.position = Input.mousePosition;
+
         Vector2 vectorFromOrigin = new Vector2(cursor.transform.localPosition.x, cursor.transform.localPosition.y);
         if (vectorFromOrigin.magnitude < 40)
         {
             Mouse.current.WarpCursorPosition(new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height)));
+            _barHealth = barHealth;
+            _numToWin--;
+            _barDeclineSpeed *= barSpeedIncreaseFactor;
+            if(_numToWin <= 0)
+            {
+                Debug.Log("game win");
+                manager.EndMinigame(true);
+            }
         }
-        
+        else
+        {
+            _barHealth -= Time.deltaTime * _barDeclineSpeed;
+
+            if(_barHealth <= 0)
+            {
+                Debug.Log("gamelose");
+                manager.EndMinigame(false);
+            }
+        }
+
+        bar.localScale = new Vector3 ((_barHealth / barHealth * 10), 0.1f, 1f);
+
     }
 
 }
