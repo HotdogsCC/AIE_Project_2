@@ -15,10 +15,13 @@ public class SpearMinigame : MonoBehaviour
     [SerializeField] private float barDeclineSpeed = 3f;
     [SerializeField] private float barSpeedIncreaseFactor = 1.25f;
     [SerializeField] private int numToWin = 10;
+    [SerializeField] private float timeInCircle = 1f;
+    [SerializeField] private float shakeFactor = 20f;
 
     private float _barHealth = 10f;
     private float _barDeclineSpeed = 10f;
     private int _numToWin = 10;
+    private float _timeInCircle = 1f;
 
     private bool isGameRunning;
     // Start is called before the first frame update
@@ -32,6 +35,7 @@ public class SpearMinigame : MonoBehaviour
         _barHealth = barHealth;
         _barDeclineSpeed = barDeclineSpeed;
         _numToWin = numToWin + 1;
+        _timeInCircle = timeInCircle;
     }
 
     // Update is called once per frame
@@ -40,17 +44,33 @@ public class SpearMinigame : MonoBehaviour
         cursor.transform.position = Input.mousePosition;
 
         Vector2 vectorFromOrigin = new Vector2(cursor.transform.localPosition.x, cursor.transform.localPosition.y);
+
+        //this runs when mouse is in range
         if (vectorFromOrigin.magnitude < 40)
         {
-            Mouse.current.WarpCursorPosition(new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height)));
-            _barHealth = barHealth;
-            _numToWin--;
-            _barDeclineSpeed *= barSpeedIncreaseFactor;
-            if(_numToWin <= 0)
+            _timeInCircle -= Time.deltaTime;
+            _barHealth += Time.deltaTime * _barDeclineSpeed / 2;
+
+            //shakes the mouse
+            Vector3 movementVector = new Vector3(Random.Range(-1 * shakeFactor * Screen.width / 1920, shakeFactor * Screen.width / 1920), 
+                Random.Range(-1 * shakeFactor * Screen.height / 1080, shakeFactor * Screen.height / 1080), 0);
+            Mouse.current.WarpCursorPosition(cursor.transform.position + movementVector);
+
+            if( _timeInCircle < 0 )
             {
-                Debug.Log("game win");
-                manager.EndMinigame(true);
+                Mouse.current.WarpCursorPosition(new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height)));
+                _barHealth = barHealth;
+                _numToWin--;
+                _barDeclineSpeed *= barSpeedIncreaseFactor;
+                _timeInCircle = timeInCircle;
+                if (_numToWin <= 0)
+                {
+                    Debug.Log("game win");
+                    manager.EndMinigame(true);
+                }
             }
+
+            
         }
         else
         {

@@ -414,6 +414,8 @@ MonoBehaviour:
   barDeclineSpeed: 3
   barSpeedIncreaseFactor: 1.25
   numToWin: 6
+  timeInCircle: 1
+  shakeFactor: 1
 --- !u!1 &6623862144674758241
 GameObject:
   m_ObjectHideFlags: 0
