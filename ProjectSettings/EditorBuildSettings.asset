@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Other/PreMade/Playground/Playground.unity
-    guid: 707acc8dffb72b144bb1ffbe1c965f3d
+  - enabled: 1
+    path: Assets/Scenes/- Build/0. MainMenu.unity
+    guid: 65539e6531bfd4d488e8d39092e9dc86
+  - enabled: 1
+    path: Assets/Scenes/- Build/1. TheShalows.unity
+    guid: 01b625813bca6474c81b8402ae179179
   - enabled: 1
     path: Assets/Scenes/Personal/Charile/Charile.unity
     guid: e5d8ebd24f84fad4ba40d7d5b18a936d
