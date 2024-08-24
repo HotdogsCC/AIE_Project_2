@@ -50,6 +50,7 @@ public class SpearMinigame : MonoBehaviour
         {
             _timeInCircle -= Time.deltaTime;
             _barHealth += Time.deltaTime * _barDeclineSpeed / 2;
+            bar.localPosition = new Vector2(Random.Range(-5, 6), Random.Range(-442, -431));
 
             //shakes the mouse
             Vector3 movementVector = new Vector3(Random.Range(-1 * shakeFactor * Screen.width / 1920, shakeFactor * Screen.width / 1920), 
@@ -75,8 +76,9 @@ public class SpearMinigame : MonoBehaviour
         else
         {
             _barHealth -= Time.deltaTime * _barDeclineSpeed;
+            bar.localPosition = new Vector2(0, -436);
 
-            if(_barHealth <= 0)
+            if (_barHealth <= 0)
             {
                 Debug.Log("gamelose");
                 manager.EndMinigame(false);

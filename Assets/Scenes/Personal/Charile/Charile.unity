@@ -2117,36 +2117,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6623862144464633730, guid: 32052e66af0c27f468ff28ce0a41dd9c,
-        type: 3}
-      propertyPath: gravity
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6623862144464633730, guid: 32052e66af0c27f468ff28ce0a41dd9c,
-        type: 3}
-      propertyPath: bounciness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6623862144464633730, guid: 32052e66af0c27f468ff28ce0a41dd9c,
-        type: 3}
-      propertyPath: jumpStrength
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6623862144464633730, guid: 32052e66af0c27f468ff28ce0a41dd9c,
-        type: 3}
-      propertyPath: maxFallSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6623862144464633730, guid: 32052e66af0c27f468ff28ce0a41dd9c,
-        type: 3}
-      propertyPath: maxRaiseSpeed
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6623862145207629819, guid: 32052e66af0c27f468ff28ce0a41dd9c,
-        type: 3}
-      propertyPath: startingFishPercentage
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 6623862146045084818, guid: 32052e66af0c27f468ff28ce0a41dd9c,
         type: 3}
       propertyPath: m_Pivot.x
