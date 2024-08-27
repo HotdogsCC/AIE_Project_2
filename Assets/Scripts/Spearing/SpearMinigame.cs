@@ -7,16 +7,23 @@ using UnityEngine.UI;
 
 public class SpearMinigame : MonoBehaviour
 {
+    [Header("Objects")]
     [SerializeField] private SpearMinigameManager manager;
     [SerializeField] private GameObject cursor;
     [SerializeField] private Transform bar;
+    [SerializeField] private Transform fishImage;
 
+    [Header("Gameplay Factors")]
     [SerializeField] private float barHealth = 10f;
     [SerializeField] private float barDeclineSpeed = 3f;
     [SerializeField] private float barSpeedIncreaseFactor = 1.25f;
     [SerializeField] private int numToWin = 10;
     [SerializeField] private float timeInCircle = 1f;
-    [SerializeField] private float shakeFactor = 20f;
+
+    [Header("Graphics Factors")]
+    [SerializeField] private float mouseShakeFactor = 20f;
+    [SerializeField] private float fishShakeFactor = 5f;
+
 
     private float _barHealth = 10f;
     private float _barDeclineSpeed = 10f;
@@ -41,6 +48,8 @@ public class SpearMinigame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ShakeFishImage();
+
         cursor.transform.position = Input.mousePosition;
 
         Vector2 vectorFromOrigin = new Vector2(cursor.transform.localPosition.x, cursor.transform.localPosition.y);
@@ -50,11 +59,11 @@ public class SpearMinigame : MonoBehaviour
         {
             _timeInCircle -= Time.deltaTime;
             _barHealth += Time.deltaTime * _barDeclineSpeed / 2;
-            bar.localPosition = new Vector2(Random.Range(-5, 6), Random.Range(-442, -431));
+            bar.localPosition = new Vector2(Random.Range(-5, 6), Random.Range(-442, -431)); //Shakes bar
 
             //shakes the mouse
-            Vector3 movementVector = new Vector3(Random.Range(-1 * shakeFactor * Screen.width / 1920, shakeFactor * Screen.width / 1920), 
-                Random.Range(-1 * shakeFactor * Screen.height / 1080, shakeFactor * Screen.height / 1080), 0);
+            Vector3 movementVector = new Vector3(Random.Range(-1 * mouseShakeFactor * Screen.width / 1920, mouseShakeFactor * Screen.width / 1920), 
+                Random.Range(-1 * mouseShakeFactor * Screen.height / 1080, mouseShakeFactor * Screen.height / 1080), 0);
             Mouse.current.WarpCursorPosition(cursor.transform.position + movementVector);
 
             if( _timeInCircle < 0 )
@@ -88,6 +97,12 @@ public class SpearMinigame : MonoBehaviour
         bar.localScale = new Vector3 ((_barHealth / barHealth * 10), 0.1f, 1f);
         bar.GetComponent<Image>().color = new Color(1 - _barHealth / barHealth, _barHealth/barHealth, 0);
 
+    }
+
+    private void ShakeFishImage()
+    {
+        fishImage.localPosition = new Vector2(Random.Range(-fishShakeFactor, fishShakeFactor), 
+            Random.Range(77.5f - fishShakeFactor, 77.5f + fishShakeFactor));
     }
 
 }
