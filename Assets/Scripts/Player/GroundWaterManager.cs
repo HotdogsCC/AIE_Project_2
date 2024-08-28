@@ -7,7 +7,7 @@ using UnityEngine;
 public class GroundWaterManager : MonoBehaviour
 {
     [Header("Important Stuff")]
-    [SerializeField] private bool inWater = false;
+    [SerializeField] public bool inWater = false;
     [SerializeField] private FirstPersonController firstPersonController;
     [SerializeField] private GameObject fishingRod;
     [SerializeField] private GameObject spear;

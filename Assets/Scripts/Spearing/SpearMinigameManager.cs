@@ -25,12 +25,12 @@ public class SpearMinigameManager : MonoBehaviour
     {
         if(gameWin)
         {
-            Debug.Log("game won, fish (will be) stashed in inventory");
+            FindObjectOfType<TextDisplay>().DisplayText("Fish Caught", 3f);
             Destroy(fish.gameObject);
         }
         else
         {
-            Debug.Log("game lost, fish back in wild, probably should damage the player and swim off");
+            FindObjectOfType<TextDisplay>().DisplayText("Fish Lost", 3f);
             fish.SetParent(null);
             fish.GetComponent<FishMovement>().enabled = true;
             fish.GetComponent<FishMovement>().CalculateNewDirection();

@@ -87,6 +87,11 @@ public class RodFishCaster : MonoBehaviour
         buoy.transform.localRotation = Quaternion.Euler(Vector3.zero);
     }
 
+    public void SetCast()
+    {
+        isCast = false;
+    }
+
     //Makes it so the fishing line is drawn right before the frame is set to render, that way it looks good!
     private void OnEnable()
     {

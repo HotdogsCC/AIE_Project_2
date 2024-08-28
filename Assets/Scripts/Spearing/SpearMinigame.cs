@@ -41,7 +41,7 @@ public class SpearMinigame : MonoBehaviour
     {
         _barHealth = barHealth;
         _barDeclineSpeed = barDeclineSpeed;
-        _numToWin = numToWin + 1;
+        _numToWin = numToWin;
         _timeInCircle = timeInCircle;
     }
 

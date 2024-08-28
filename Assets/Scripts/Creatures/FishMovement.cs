@@ -13,6 +13,7 @@ public class FishMovement : MonoBehaviour
     private Vector3 hookPos;
     bool iSeeRod = false;
     private Transform player;
+    private GroundWaterManager waterManager;
 
     private enum BehaviourMode { neutral, aggresive, scared };
 
@@ -40,6 +41,7 @@ public class FishMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         player = FindObjectOfType<Camera>().transform;
+        waterManager = FindObjectOfType<GroundWaterManager>();
 
         CalculateNewDirection();
     }
@@ -50,7 +52,12 @@ public class FishMovement : MonoBehaviour
         //Checks if player is close enough to fish
         if (Vector3.Distance(transform.position, player.transform.position) <= reactionRadius)
         {
-            ReactToPlayer();
+            // Checks player is in the water
+            if(waterManager.inWater)
+            {
+                ReactToPlayer();
+            }
+            
         }
 
         //Continue movement towards target position
@@ -139,19 +146,29 @@ public class FishMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Runs when the fish goes into the hook 
-        if(collision.transform.tag == "hook")
+        switch (collision.transform.tag)
         {
-            FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
-            foreach (var fish in fishies)
-            {
-                fish.GetComponent<SphereCollider>().enabled = false;
-                fish.GetComponentInParent<BoxCollider>().enabled = false;
-                fish.GetComponentInParent<FishMovement>().IDontSeeRod();
-                fish.GetComponentInParent<FishMovement>().CalculateNewDirection();
-            }
-            collision.gameObject.transform.SetParent(transform);
-            FindObjectOfType<FishRodMinigameManager>().StartMinigame(fishIconMoveSpeed, fishIconChanceOfChangingDirection);
+            //Runs when the fish goes into the hook 
+            case "hook":
+                FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
+                foreach (var fish in fishies)
+                {
+                    fish.GetComponent<SphereCollider>().enabled = false;
+                    fish.GetComponentInParent<BoxCollider>().enabled = false;
+                    fish.GetComponentInParent<FishMovement>().IDontSeeRod();
+                    fish.GetComponentInParent<FishMovement>().CalculateNewDirection();
+                }
+                collision.gameObject.transform.SetParent(transform);
+                FindObjectOfType<FishRodMinigameManager>().StartMinigame(fishIconMoveSpeed, fishIconChanceOfChangingDirection);
+                break;
+
+            case "Player":
+                FindObjectOfType<Health>().ChangeHealth(-34);
+                Destroy(gameObject);
+                break;
+
+            default:
+                break;
         }
     }
 
