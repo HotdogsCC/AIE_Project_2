@@ -580,11 +580,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8187419877552575246, guid: ea85f8d0ec2ec204f81ecf79150e0492,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd50c0ab0f9f50f4d8642512dd608f34, type: 2}
+    - target: {fileID: -6652216401052231438, guid: ea85f8d0ec2ec204f81ecf79150e0492,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd50c0ab0f9f50f4d8642512dd608f34, type: 2}
+    - target: {fileID: -4493155004618301193, guid: ea85f8d0ec2ec204f81ecf79150e0492,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd50c0ab0f9f50f4d8642512dd608f34, type: 2}
+    - target: {fileID: 838886949566221533, guid: ea85f8d0ec2ec204f81ecf79150e0492,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd50c0ab0f9f50f4d8642512dd608f34, type: 2}
     - target: {fileID: 919132149155446097, guid: ea85f8d0ec2ec204f81ecf79150e0492,
         type: 3}
       propertyPath: m_Name
       value: BasicFish
       objectReference: {fileID: 0}
+    - target: {fileID: 6801991270881654517, guid: ea85f8d0ec2ec204f81ecf79150e0492,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd50c0ab0f9f50f4d8642512dd608f34, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea85f8d0ec2ec204f81ecf79150e0492, type: 3}
 --- !u!1001 &401739905
@@ -1332,6 +1357,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4310829207377040873, guid: 32052e66af0c27f468ff28ce0a41dd9c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310829207377040873, guid: 32052e66af0c27f468ff28ce0a41dd9c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6623862146045084818, guid: 32052e66af0c27f468ff28ce0a41dd9c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1851,6 +1886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6693639227023354105, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd50c0ab0f9f50f4d8642512dd608f34, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 411a358402e484940958286304e10e79, type: 3}
 --- !u!1 &2114283753834967212
