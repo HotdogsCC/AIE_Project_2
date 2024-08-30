@@ -12,6 +12,7 @@ public class FishSlider : MonoBehaviour
 
     [Header("Mouse Input System")]
     [SerializeField] private float moveSpeed = 10;
+    [SerializeField] private float resistance = 0.25f;
 
     [Header("Space Input System")]
     [SerializeField] private float jumpStrength = 0.5f;
@@ -45,7 +46,11 @@ public class FishSlider : MonoBehaviour
 
     private void MouseInput()
     {
-        displacement = displacement - (_input.look.y * moveSpeed);
+        velocity = velocity - (_input.look.y * moveSpeed);
+        velocity -= velocity * resistance * Time.deltaTime;
+        velocity = Mathf.Clamp(velocity, -maxFallSpeed, maxRaiseSpeed);
+
+        displacement += velocity;
         //Debug.Log(displacement);
     }
 

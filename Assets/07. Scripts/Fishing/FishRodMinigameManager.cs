@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class FishRodMinigameManager : MonoBehaviour
 {
     [Header("Adjustable factors")]
-    [SerializeField] private int acceptableRange = 15;
+    [SerializeField] private int acceptableRange = 12;
     [Range(0f, 100f)]
     [SerializeField] private float startingFishPercentage = 30f;
     [SerializeField] private float progressDecreaseFactor = 3f;
