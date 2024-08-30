@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 955501317}
   - component: {fileID: 955501316}
   - component: {fileID: 955501319}
-  m_Layer: 4
+  m_Layer: 10
   m_Name: Underwater
   m_TagString: water
   m_Icon: {fileID: 0}
@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 1009513525}
   - component: {fileID: 1009513524}
   - component: {fileID: 1009513523}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Post Proccessing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
