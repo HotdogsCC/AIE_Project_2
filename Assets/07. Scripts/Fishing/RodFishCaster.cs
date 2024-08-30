@@ -26,7 +26,7 @@ public class RodFishCaster : MonoBehaviour
             if (isCast)
             {
                 FindObjectOfType<FishRodMinigameManager>().EndMinigame();
-                ReelLine();
+                UnsetCast();
             }
             else
             {
@@ -90,6 +90,11 @@ public class RodFishCaster : MonoBehaviour
     public void SetCast()
     {
         isCast = false;
+    }
+
+    public void UnsetCast()
+    {
+        isCast = true;
     }
 
     //Makes it so the fishing line is drawn right before the frame is set to render, that way it looks good!
