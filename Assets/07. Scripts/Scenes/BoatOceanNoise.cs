@@ -15,11 +15,10 @@ public class BoatOceanNoise : MonoBehaviour
     {
         //makes boat go up and down
         transform.position = new Vector3(transform.position.x,
-            (Mathf.Sin(Time.realtimeSinceStartup) + Mathf.Sin(Time.realtimeSinceStartup / 2) + Mathf.Sin(Time.realtimeSinceStartup / 3)
-            + Mathf.Sin(Time.realtimeSinceStartup * 3 / 2) + Mathf.Sin(Time.realtimeSinceStartup * 5 / 3) + 9) / 3,
+            Mathf.Sin(Time.realtimeSinceStartup)/2 + 35.45f,
             transform.position.z);
         
         //makes boat rock side to side
-        transform.rotation = Quaternion.Euler(transform.rotation.x, 127, Mathf.Sin(Time.realtimeSinceStartup/2) * 8);
+        transform.rotation = Quaternion.Euler(transform.rotation.x, 0, Mathf.Sin(Time.realtimeSinceStartup/2) * 8);
     }
 }

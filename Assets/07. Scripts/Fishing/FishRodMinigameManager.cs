@@ -70,7 +70,8 @@ public class FishRodMinigameManager : MonoBehaviour
         }
 
         //REMOVE BEFORE RELEASE - debug stuff
-        debugText.text = catchProgressPercentage.ToString();
+        int temp = (int)catchProgressPercentage;
+        debugText.text = temp.ToString();
     }
 
     public void StartMinigame(float _moveSpeed, int _chanceOfMoveDirection)

@@ -344,8 +344,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99453937293896122}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.11, y: 5.435, z: 13.83}
+  m_LocalRotation: {x: -0, y: -0.12163093, z: -0, w: 0.9925754}
+  m_LocalPosition: {x: -1.1, y: 37.882, z: 51.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -672,8 +672,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4615605528537092280}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.11, y: 4.06, z: 13.83}
+  m_LocalRotation: {x: -0, y: -0.12163093, z: -0, w: 0.9925754}
+  m_LocalPosition: {x: -1.1, y: 36.507, z: 51.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -681,7 +681,7 @@ Transform:
   - {fileID: 9025774510920484013}
   m_Father: {fileID: 9025774510373290980}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -13.972, z: 0}
 --- !u!143 &4615605528537092274
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1110,7 +1110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7060687293360407407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.11, y: 5.435, z: 13.83}
+  m_LocalPosition: {x: -1.1, y: 37.882, z: 51.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1372,11 +1372,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   groundTerminalVelocity: 53
-  waterMoveSpeed: 1
-  waterSprintSpeed: 1
+  waterMoveSpeed: 3
+  waterSprintSpeed: 3
   waterRotationSpeed: 1
   waterSpeedChangeRate: 5
-  waterJumpHeight: 1.5
+  waterJumpHeight: 3
   waterGravity: -0.5
   waterJumpTimeout: 0
   waterFallTimeout: 0.15
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   waterGroundLayers:
     serializedVersion: 2
     m_Bits: 0
-  waterTerminalVel: 3
+  waterTerminalVel: 5
 --- !u!1001 &391474925073348792
 PrefabInstance:
   m_ObjectHideFlags: 0

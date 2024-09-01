@@ -17,6 +17,10 @@ public class FishMovement : MonoBehaviour
 
     private enum BehaviourMode { neutral, aggresive, scared };
 
+    [Header("Fish Home")]
+    [SerializeField] private Transform home;
+    [SerializeField] private float homeRadius;
+
     [Header("Swiming Attributes")]
     [SerializeField] float minSwimDistance = 5f;
     [SerializeField] float maxSwimDistance = 10f;
@@ -91,6 +95,7 @@ public class FishMovement : MonoBehaviour
             targetPos = hookPos;
             transform.rotation = Quaternion.LookRotation(targetPos - transform.position);
         }
+
         else
         {
             //Randomly picks a target position from each axis
@@ -112,8 +117,23 @@ public class FishMovement : MonoBehaviour
                 zTarg = -zTarg;
             }
 
-            //Creates the target position from the target direction
-            targetPos = new Vector3(transform.position.x + xTarg, Mathf.Clamp(transform.position.y + yTarg, -999, maxHeight), transform.position.z + zTarg);
+            //Targets a specific area
+            if(home != null)
+            {
+                targetPos = new Vector3(
+                    Mathf.Clamp(transform.position.x + xTarg, home.position.x - homeRadius, home.position.x + homeRadius),
+                    Mathf.Clamp(transform.position.y + xTarg, home.position.y - homeRadius, home.position.y + homeRadius),
+                    Mathf.Clamp(transform.position.z + xTarg, home.position.z - homeRadius, home.position.z + homeRadius));
+            }
+            else
+            {
+                //Creates the target position from the target direction
+                targetPos = new Vector3(
+                    transform.position.x + xTarg, 
+                    Mathf.Clamp(transform.position.y + yTarg, -999, maxHeight), 
+                    transform.position.z + zTarg);
+            }
+            
 
             //Makes the fish look towards the target
             transform.LookAt(targetPos);
@@ -141,7 +161,16 @@ public class FishMovement : MonoBehaviour
 
     public void IDontSeeRod()
     {
-        iSeeRod = false;
+        if(iSeeRod)
+        {
+            iSeeRod = false;
+            CalculateNewDirection();
+        }
+        else
+        {
+            iSeeRod = false;
+        }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -163,11 +192,25 @@ public class FishMovement : MonoBehaviour
                 break;
 
             case "Player":
-                FindObjectOfType<Health>().ChangeHealth(-34);
-                Destroy(gameObject);
+                if(behaviour == BehaviourMode.aggresive)
+                {
+                    FindObjectOfType<Health>().ChangeHealth(-34);
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    CalculateNewDirection();
+                }
+                
+                break;
+            case "terrain":
+                CalculateNewDirection();
+                Debug.Log("ouch");
                 break;
 
             default:
+                Debug.Log("i hit my  head");
+                CalculateNewDirection();
                 break;
         }
     }

@@ -88,8 +88,8 @@ Transform:
   m_GameObject: {fileID: 4397961489959252475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 14.4, z: -27.6}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 356593923}
   - {fileID: 363572285943118311}
@@ -108,12 +108,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13581f5c16713f24eb4e1bfb869ae5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  home: {fileID: 0}
+  homeRadius: 0
   minSwimDistance: 2
   maxSwimDistance: 8
   minSwimSpeed: 0.5
   maxSwimSpeed: 4
   swimDeceleration: 2
-  maxHeight: 2
+  maxHeight: 33
   behaviour: 0
   reactionRadius: 2
   fishIconMoveSpeed: 25
@@ -179,7 +181,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.25, y: 0.38, z: 0.81}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4397961489959252476
 Rigidbody:
