@@ -202,6 +202,7 @@ public class FishMovement : MonoBehaviour
                 if(behaviour == BehaviourMode.aggresive)
                 {
                     FindObjectOfType<Health>().ChangeHealth(-34);
+                    FindObjectOfType<FishBiteScare>().Scare();
                     Destroy(gameObject);
                 }
                 else

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class Health : MonoBehaviour
     public void ChangeHealth(int change)
     {
         health += change;
+        if(health <= 0)
+        {
+            SceneManager.LoadScene(1);
+        }
+
         healthSlider.value = health;
     }
 }

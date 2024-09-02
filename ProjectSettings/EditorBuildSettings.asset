@@ -11,12 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scenes/- Build/1. TheShalows.unity
     guid: 01b625813bca6474c81b8402ae179179
-  - enabled: 1
-    path: Assets/01. Scenes/Personal/Charile/Charile.unity
-    guid: e5d8ebd24f84fad4ba40d7d5b18a936d
-  - enabled: 1
-    path: Assets/01. Scenes/Personal/Edward/Edward.unity
-    guid: a6c1dd7e318720040af7a46479d54835
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}
