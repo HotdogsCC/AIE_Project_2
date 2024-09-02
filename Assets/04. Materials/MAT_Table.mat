@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TEX_Desk
+  m_Name: MAT_Table
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords:
   - _METALLICSPECGLOSSMAP
@@ -37,11 +37,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 101a5cb64f2651040a9da32dcbb56a6a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 051cead612f90334caa3ca4896662d8d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: b6c37fc3d3f444044a12477f8066b5f3, type: 3}
+        m_Texture: {fileID: 2800000, guid: fbdc2ac215f5db7489a56c129439feb3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -61,11 +61,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 101a5cb64f2651040a9da32dcbb56a6a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 051cead612f90334caa3ca4896662d8d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 77e85b88d8ca1f743af1d870f61ad186, type: 3}
+        m_Texture: {fileID: 2800000, guid: 07efa6eb8a3a09e4ca2d503226aabcd3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
