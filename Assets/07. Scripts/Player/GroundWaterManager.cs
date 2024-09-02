@@ -84,13 +84,13 @@ public class GroundWaterManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateGroundWaterMovementVars();
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateGroundWaterMovementVars();
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -98,6 +98,7 @@ public class GroundWaterManager : MonoBehaviour
         if(other.tag == "water")
         {
             inWater = true;
+            UpdateGroundWaterMovementVars();
         }
     }
 
@@ -106,6 +107,7 @@ public class GroundWaterManager : MonoBehaviour
         if (other.tag == "water")
         {
             inWater = false;
+            UpdateGroundWaterMovementVars();
         }
     }
 
@@ -147,6 +149,12 @@ public class GroundWaterManager : MonoBehaviour
             firstPersonController.GroundedRadius = groundGroundedRadius;
             //firstPersonController.GroundLayers = groundGroundLayers;
             firstPersonController._terminalVelocity = groundTerminalVelocity;
+            FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
+            foreach (var fish in fishies)
+            {
+                fish.GetComponent<SphereCollider>().enabled = false;
+                fish.GetComponentInParent<FishMovement>().IDontSeeRod();
+            }
             spear.SetActive(false);
             fishingRod.SetActive(true);
         }

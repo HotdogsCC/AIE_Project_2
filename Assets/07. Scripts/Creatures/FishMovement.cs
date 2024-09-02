@@ -133,10 +133,17 @@ public class FishMovement : MonoBehaviour
                     Mathf.Clamp(transform.position.y + yTarg, -999, maxHeight), 
                     transform.position.z + zTarg);
             }
-            
+
 
             //Makes the fish look towards the target
             transform.LookAt(targetPos);
+
+
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Vector3.Distance(transform.position, targetPos), 65536))
+            {
+                CalculateNewDirection();
+            }
         }
     }
 
