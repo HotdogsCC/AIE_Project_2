@@ -57,7 +57,7 @@ MonoBehaviour:
   minSwimSpeed: 1
   maxSwimSpeed: 5
   swimDeceleration: 1
-  maxHeight: 33
+  maxHeight: 20
   behaviour: 1
   reactionRadius: 4
   fishIconMoveSpeed: 25

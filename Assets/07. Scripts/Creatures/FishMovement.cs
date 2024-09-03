@@ -18,8 +18,7 @@ public class FishMovement : MonoBehaviour
     private enum BehaviourMode { neutral, aggresive, scared };
 
     [Header("Fish Home")]
-    [SerializeField] private Transform home;
-    [SerializeField] private float homeRadius;
+    [SerializeField] private FishHome home;
 
     [Header("Swiming Attributes")]
     [SerializeField] float minSwimDistance = 5f;
@@ -121,9 +120,9 @@ public class FishMovement : MonoBehaviour
             if(home != null)
             {
                 targetPos = new Vector3(
-                    Mathf.Clamp(transform.position.x + xTarg, home.position.x - homeRadius, home.position.x + homeRadius),
-                    Mathf.Clamp(transform.position.y + xTarg, home.position.y - homeRadius, home.position.y + homeRadius),
-                    Mathf.Clamp(transform.position.z + xTarg, home.position.z - homeRadius, home.position.z + homeRadius));
+                    Mathf.Clamp(transform.position.x + xTarg, home.transform.position.x - home.radius, home.transform.position.x + home.radius),
+                    Mathf.Clamp(transform.position.y + yTarg, home.transform.position.y - home.radius, home.transform.position.y + home.radius),
+                    Mathf.Clamp(transform.position.z + zTarg, home.transform.position.z - home.radius, home.transform.position.z + home.radius));
             }
             else
             {

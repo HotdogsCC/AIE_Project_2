@@ -986,6 +986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1598399025}
   - component: {fileID: 1598399026}
+  - component: {fileID: 1598399027}
   m_Layer: 0
   m_Name: Barback
   m_TagString: Untagged
@@ -1060,3 +1061,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1598399027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598399024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bd830bb58e5804cbae9782d0d72855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
