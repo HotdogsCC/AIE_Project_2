@@ -40,7 +40,6 @@ public class SpearMinigame : MonoBehaviour
     void Start()
     {
         manager = FindObjectOfType<SpearMinigameManager>();
-        StartCoroutine(StartRunning(3f));
     }
 
     private void OnEnable()
@@ -49,6 +48,9 @@ public class SpearMinigame : MonoBehaviour
         _barDeclineSpeed = barDeclineSpeed;
         _numToWin = numToWin;
         _timeInCircle = timeInCircle;
+        StartCoroutine(StartRunning(3f));
+        running = false;
+        returning = false;
     }
 
     // Update is called once per frame
