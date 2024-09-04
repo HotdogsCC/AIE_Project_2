@@ -116,6 +116,7 @@ public class GroundWaterManager : MonoBehaviour
         //sets stuff like speed and stuff based on whether player is walking or swiming
         if (inWater)
         {
+            RenderSettings.fog = true;
             firstPersonController.MoveSpeed = waterMoveSpeed;
             firstPersonController.SprintSpeed = waterSprintSpeed;
             firstPersonController.RotationSpeed = waterRotationSpeed;
@@ -138,6 +139,7 @@ public class GroundWaterManager : MonoBehaviour
         }
         else
         {
+            RenderSettings.fog = false;
             firstPersonController.MoveSpeed = groundMoveSpeed;
             firstPersonController.SprintSpeed = groundSprintSpeed;
             firstPersonController.RotationSpeed = groundRotationSpeed;
