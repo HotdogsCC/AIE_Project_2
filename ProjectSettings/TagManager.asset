@@ -10,6 +10,8 @@ TagManager:
   - hook
   - fishHookBox
   - terrain
+  - Test
+  - Sea
   layers:
   - Default
   - TransparentFX
