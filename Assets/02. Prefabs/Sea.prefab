@@ -653,9 +653,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4554327062270080}
   - component: {fileID: 114943683913522278}
-  - component: {fileID: 1791708600413403236}
-  - component: {fileID: 4850961512086213010}
   - component: {fileID: 7845684653448362968}
+  - component: {fileID: 306007436}
   m_Layer: 4
   m_Name: Sea
   m_TagString: Sea
@@ -670,7 +669,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015499191777110}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -776,38 +775,6 @@ MonoBehaviour:
   settingsData: {fileID: 11400000, guid: a4cacf74654e54b35b9eaea74fd20b4e, type: 2}
   surfaceData: {fileID: 11400000, guid: 846f3dc3b5341447a86687211f741bc7, type: 2}
   resources: {fileID: 11400000, guid: 40615c805d6e84ce7800418367985fe1, type: 2}
---- !u!114 &1791708600413403236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015499191777110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Visable","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &4850961512086213010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015499191777110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 0f86c86681397d14db6776354481f9c7, type: 2}
 --- !u!65 &7845684653448362968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -819,8 +786,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 50, y: 50, z: 50}
+  m_Size: {x: 77.4, y: 70.39, z: 116.6}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &306007436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015499191777110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 305a9f9a0a3a6974d81a6a27babb4d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  water: {fileID: 0}
 --- !u!1 &1015611998099468
 GameObject:
   m_ObjectHideFlags: 0
