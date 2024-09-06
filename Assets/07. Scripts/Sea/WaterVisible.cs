@@ -16,6 +16,14 @@ public class WaterVisible : MonoBehaviour
     {
         if(other.transform.tag == "Player")
         {
+            water.enabled = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.tag == "Player")
+        {
             water.enabled = false;
         }
     }

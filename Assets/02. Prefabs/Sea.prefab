@@ -693,7 +693,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015499191777110}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6edb8448c9b94f018953ca2a6fa5891, type: 3}
   m_Name: 
@@ -800,7 +800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305a9f9a0a3a6974d81a6a27babb4d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  water: {fileID: 0}
 --- !u!1 &1015611998099468
 GameObject:
   m_ObjectHideFlags: 0
