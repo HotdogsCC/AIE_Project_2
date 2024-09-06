@@ -15,7 +15,7 @@ public class FishMovement : MonoBehaviour
     private Transform player;
     private GroundWaterManager waterManager;
 
-    private enum BehaviourMode { neutral, aggresive, scared };
+    private enum BehaviourMode { neutral, aggresive, scared, faceFish };
 
     [Header("Fish Home")]
     [SerializeField] private FishHome home;
@@ -158,6 +158,15 @@ public class FishMovement : MonoBehaviour
         transform.LookAt(targetPos);
     }
 
+    private void CalculateNewDirection(Vector3 position, float speed)
+    {
+        swimSpeed = speed;
+
+        targetPos = position;
+
+        transform.LookAt(player);
+    }
+
     //Called by FishHookDetection, 
     public void ISeeRod(Vector3 inputHookPos)
     {
@@ -247,8 +256,27 @@ public class FishMovement : MonoBehaviour
                 //Move away from player
                 CalculateNewDirection(transform.position + movementDirection);
                 break;
+            case BehaviourMode.faceFish:
+                //Checks player is looking at faceFish
+                //RaycastHit hit;
+                //if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity, 2048))
+                //{
+                //    Debug.Log("raycasting");
+                //    LookedAt();
+                //}
+                LookedAt();
+                    break;
             default:
                 break;
         }
+    }
+
+    //Runs when the player is looking at the fish, used for face fish behaviour
+    public void LookedAt()
+    {
+        Vector3 movementDirection = transform.position - player.transform.position;
+        movementDirection = Vector3.Normalize(movementDirection);
+        CalculateNewDirection(transform.position + movementDirection, minSwimSpeed);
+
     }
 }
