@@ -15,7 +15,7 @@ public class FishMovement : MonoBehaviour
     private Transform player;
     private GroundWaterManager waterManager;
 
-    private enum BehaviourMode { neutral, aggresive, scared, faceFish };
+    private enum BehaviourMode { neutral, aggresive, scared, faceFish, coralFish };
 
     [Header("Fish Home")]
     [SerializeField] private FishHome home;
@@ -266,6 +266,24 @@ public class FishMovement : MonoBehaviour
                 //}
                 LookedAt();
                     break;
+            case BehaviourMode.coralFish:
+                //Sees which coral is closer
+                GameObject[] coral = GameObject.FindGameObjectsWithTag("hidingSpot");
+                float distance = Vector3.Distance(transform.position, coral[0].transform.position);
+                GameObject selectedCoral = coral[0];
+                foreach (var coralItem in coral)
+                {
+                    float tempDis = Vector3.Distance(transform.position, coralItem.transform.position);
+                    if (tempDis < distance)
+                    {
+                        distance = tempDis;
+                        selectedCoral = coralItem;
+                    }
+                }
+
+                //Move away from player
+                CalculateNewDirection(selectedCoral.transform.position);
+                break;
             default:
                 break;
         }

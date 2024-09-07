@@ -12,6 +12,7 @@ TagManager:
   - terrain
   - Test
   - Sea
+  - hidingSpot
   layers:
   - Default
   - TransparentFX
