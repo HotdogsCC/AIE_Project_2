@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a72a21748bb313f4ea6645a3ce592002, type: 2}
+  - {fileID: 2100000, guid: 9e2b6dde30d30954b86224bc4573d8aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7519731223035642191}
   - component: {fileID: -1044163804395714029}
   m_Layer: 0
-  m_Name: Yellow_GlowingRock_Large2
+  m_Name: Orange_GlowingRock_Large2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1513882460104884790}
   - component: {fileID: 2804993422534600885}
   m_Layer: 0
-  m_Name: Yellow_GlowingRock_Med1
+  m_Name: Pink_GlowingRock_Med1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04effb6ba8a58f144bee0b31464b657e, type: 2}
+  - {fileID: 2100000, guid: 015cba9c0d6a0534da6400a48ea497f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
