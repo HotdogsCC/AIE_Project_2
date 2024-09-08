@@ -87,15 +87,10 @@ public class GroundWaterManager : MonoBehaviour
         UpdateGroundWaterMovementVars();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "water")
+        if (other.tag == "water" && !inWater)
         {
             inWater = true;
             UpdateGroundWaterMovementVars();
