@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 279416614218922049}
   - component: {fileID: 2893086039519754686}
   - component: {fileID: 3714845220273223173}
+  - component: {fileID: 420153374249356326}
   m_Layer: 0
   m_Name: MDL_LP_GlowingRock_Med1
   m_TagString: Untagged
@@ -130,3 +131,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &420153374249356326
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3503540840651252691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2176676588308935479, guid: 24332870260361d4bac052a8415f8923, type: 3}
