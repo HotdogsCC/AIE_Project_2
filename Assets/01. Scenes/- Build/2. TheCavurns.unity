@@ -555,6 +555,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_GlowingRock_Med3
       objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0122
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.008
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0195
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9929238
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.09725889
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.01394099
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06669955
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.859
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042588773750267802, guid: bc398c24cd6d95948bdbaccdb6b6614e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 7.602
+      objectReference: {fileID: 0}
     - target: {fileID: 9157690983701803148, guid: bc398c24cd6d95948bdbaccdb6b6614e,
         type: 3}
       propertyPath: m_RootOrder
@@ -22883,7 +22933,7 @@ Transform:
   m_GameObject: {fileID: 1781993073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0029552, y: 0.145, z: -1.538}
-  m_LocalScale: {x: 1.2955, y: 0.13553, z: 2.0442}
+  m_LocalScale: {x: 1.2955, y: 0.13553, z: 3.1192448}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 156346215}
@@ -23557,44 +23607,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5338032db891138488968a329a655bb7, type: 3}
---- !u!84 &1837162751
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1001 &1839608505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23959,8 +23971,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864173665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.83, y: -2.1424, z: 5.681}
-  m_LocalScale: {x: 1.4416672, y: 0.16827802, z: 0.9290173}
+  m_LocalPosition: {x: -2.851, y: -2.1424, z: 5.681}
+  m_LocalScale: {x: 3.5394373, y: 0.16827802, z: 0.9290173}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1053379280}
@@ -24871,6 +24883,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008fc0cfc5ea5b849b2e8a2ec1dacf45, type: 3}
+--- !u!84 &1930666180
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1001 &1937310581
 PrefabInstance:
   m_ObjectHideFlags: 0
