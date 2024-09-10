@@ -304,7 +304,7 @@ MonoBehaviour:
     m_Bits: 0
   groundTerminalVelocity: 53
   waterMoveSpeed: 3
-  waterSprintSpeed: 3
+  waterSprintSpeed: 8
   waterRotationSpeed: 1
   waterSpeedChangeRate: 5
   waterJumpHeight: 3
@@ -317,7 +317,7 @@ MonoBehaviour:
   waterGroundLayers:
     serializedVersion: 2
     m_Bits: 0
-  waterTerminalVel: 5
+  waterTerminalVel: 10
 --- !u!54 &3614645073944438078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1313,8 +1313,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6724908806142429680}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.375, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: -0, w: -0.00000035762784}
+  m_LocalPosition: {x: 99, y: -45.925, z: 23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
