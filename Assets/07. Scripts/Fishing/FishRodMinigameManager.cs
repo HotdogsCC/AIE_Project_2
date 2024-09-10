@@ -24,6 +24,7 @@ public class FishRodMinigameManager : MonoBehaviour
 
     private float catchProgressPercentage;
     private bool isGameRunning = false;
+    private TutorialPopUp tutorial;
 
     //REMOVE BEFORE RELEASE - debug stuff
     [SerializeField] private TextMeshProUGUI debugText;
@@ -32,6 +33,7 @@ public class FishRodMinigameManager : MonoBehaviour
     void Start()
     {
         catchProgressPercentage = startingFishPercentage;
+        tutorial = FindFirstObjectByType<TutorialPopUp>();
     }
 
     // Update is called once per frame
@@ -83,6 +85,7 @@ public class FishRodMinigameManager : MonoBehaviour
         FirstPersonController player = FindObjectOfType<FirstPersonController>();
         player.PreventJump();
         player.enabled = false;
+        tutorial.FishingTut();
     }
 
     public void EndMinigame()
