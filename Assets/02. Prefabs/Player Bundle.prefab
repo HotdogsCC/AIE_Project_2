@@ -382,6 +382,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a753a826a059b44da204708a690803e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castDistance: 3
+  lookMask:
+    serializedVersion: 2
+    m_Bits: 0
+  interactPopUp: {fileID: 0}
 --- !u!1 &3359263187121065757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1372,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 237431
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1407,7 +1412,7 @@ MonoBehaviour:
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
-    m_Time: 2
+    m_Time: 1
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []

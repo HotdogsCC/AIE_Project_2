@@ -50,16 +50,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13581f5c16713f24eb4e1bfb869ae5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fishName: 1
+  behaviour: 1
+  reactionRadius: 4
   home: {fileID: 0}
-  homeRadius: 14
   minSwimDistance: 1
   maxSwimDistance: 12
   minSwimSpeed: 1
   maxSwimSpeed: 5
   swimDeceleration: 1
   maxHeight: 20
-  behaviour: 1
-  reactionRadius: 4
   fishIconMoveSpeed: 25
   fishIconChanceOfChangingDirection: 3
 --- !u!33 &332155534010972356

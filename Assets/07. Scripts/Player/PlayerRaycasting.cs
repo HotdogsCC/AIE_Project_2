@@ -6,6 +6,7 @@ public class PlayerRaycasting : MonoBehaviour
 {
     [SerializeField] private float castDistance = 3f;
     [SerializeField] private LayerMask lookMask;
+    [SerializeField] private GameObject interactPopUp;
     private Transform cam;
     private Interactable previousInteractable = null;
 
@@ -27,6 +28,7 @@ public class PlayerRaycasting : MonoBehaviour
             if (interactable != null)
             {
                 interactable.LookedAt();
+                interactPopUp.SetActive(true);
 
                 if(Input.GetKeyDown(KeyCode.E))
                 {
@@ -37,6 +39,7 @@ public class PlayerRaycasting : MonoBehaviour
         else if(previousInteractable != null)
         {
             previousInteractable.LookedAway();
+            interactPopUp.SetActive(false);
             previousInteractable = null;
         }
     }

@@ -25,6 +25,7 @@ public class FishRodMinigameManager : MonoBehaviour
     private float catchProgressPercentage;
     private bool isGameRunning = false;
     private TutorialPopUp tutorial;
+    private FishMovement fishy = null;
 
     //REMOVE BEFORE RELEASE - debug stuff
     [SerializeField] private TextMeshProUGUI debugText;
@@ -63,6 +64,7 @@ public class FishRodMinigameManager : MonoBehaviour
         if (catchProgressPercentage >= 100)
         {
             FindObjectOfType<TextDisplay>().DisplayText("Fish Caught", 3f);
+            Stats.FishCaught(fishy.GetFishIndex());
             EndMinigame();
         }
         if (catchProgressPercentage <= 0)
@@ -76,8 +78,9 @@ public class FishRodMinigameManager : MonoBehaviour
         debugText.text = temp.ToString();
     }
 
-    public void StartMinigame(float _moveSpeed, int _chanceOfMoveDirection)
+    public void StartMinigame(float _moveSpeed, int _chanceOfMoveDirection, FishMovement _fishy)
     {
+        fishy = _fishy;
         fishIconMover.SetParameters(_moveSpeed, _chanceOfMoveDirection);
         catchProgressPercentage = startingFishPercentage;
         isGameRunning = true;
@@ -90,6 +93,8 @@ public class FishRodMinigameManager : MonoBehaviour
 
     public void EndMinigame()
     {
+        Destroy(fishy.gameObject);
+        fishy = null;
         isGameRunning = false;
         ui.SetActive(false);
         FirstPersonController player = FindObjectOfType<FirstPersonController>();

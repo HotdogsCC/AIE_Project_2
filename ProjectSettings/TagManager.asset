@@ -13,6 +13,8 @@ TagManager:
   - Test
   - Sea
   - hidingSpot
+  - mainCinemachine
+  - ItemCamera
   layers:
   - Default
   - TransparentFX

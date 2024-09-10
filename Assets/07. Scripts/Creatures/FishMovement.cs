@@ -16,8 +16,12 @@ public class FishMovement : MonoBehaviour
     private GroundWaterManager waterManager;
 
     private enum BehaviourMode { neutral, aggresive, scared, faceFish, coralFish };
+    private enum FishName { normal, babarusa };
 
-    [Header("Fish Home")]
+    [Header("Identity Atrributes")]
+    [SerializeField] FishName fishName = FishName.normal;
+    [SerializeField] BehaviourMode behaviour = BehaviourMode.neutral;
+    [SerializeField] float reactionRadius = 2f;
     [SerializeField] private FishHome home;
 
     [Header("Swiming Attributes")]
@@ -27,10 +31,7 @@ public class FishMovement : MonoBehaviour
     [SerializeField] float maxSwimSpeed = 5f;
     [SerializeField] float swimDeceleration = 1f;
     [SerializeField] float maxHeight = -2f;
-
-    [Header("Player Behaviour Attributes")]
-    [SerializeField] BehaviourMode behaviour = BehaviourMode.neutral;
-    [SerializeField] float reactionRadius = 2f;
+    
 
     [Header("Fishing Minigame Attributes")]
     [SerializeField] float fishIconMoveSpeed = 25f;
@@ -203,7 +204,7 @@ public class FishMovement : MonoBehaviour
                     fish.GetComponentInParent<FishMovement>().CalculateNewDirection();
                 }
                 collision.gameObject.transform.SetParent(transform);
-                FindObjectOfType<FishRodMinigameManager>().StartMinigame(fishIconMoveSpeed, fishIconChanceOfChangingDirection);
+                FindObjectOfType<FishRodMinigameManager>().StartMinigame(fishIconMoveSpeed, fishIconChanceOfChangingDirection, this);
                 break;
 
             case "Player":
@@ -296,5 +297,10 @@ public class FishMovement : MonoBehaviour
         movementDirection = Vector3.Normalize(movementDirection);
         CalculateNewDirection(transform.position + movementDirection, minSwimSpeed);
 
+    }
+
+    public int GetFishIndex()
+    {
+        return (int)fishName;
     }
 }
