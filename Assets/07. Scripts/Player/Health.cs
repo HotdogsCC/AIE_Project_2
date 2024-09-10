@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     [Header("Object Reference")]
-    [SerializeField] private Slider healthSlider;
+    [SerializeField] private Image healthSlider;
 
     [SerializeField] private float health = 100;
 
     private void Start()
     {
-        healthSlider.value = health;
+        SetHealthBar();
     }
 
     public void ChangeHealth(int change)
@@ -24,6 +24,11 @@ public class Health : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
-        healthSlider.value = health;
+        SetHealthBar();
+    }
+
+    private void SetHealthBar()
+    {
+        healthSlider.fillAmount = health / 100;
     }
 }
