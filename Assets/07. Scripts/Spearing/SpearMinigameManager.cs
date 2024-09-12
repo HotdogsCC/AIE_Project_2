@@ -18,7 +18,7 @@ public class SpearMinigameManager : MonoBehaviour
         fish.SetParent(spearTip);
         fish.localPosition = Vector3.zero;
         spearMinigame.SetActive(true);
-        FindObjectOfType<FirstPersonController>().enabled = false;
+        Pausing.Freeze();
     }
 
     public void EndMinigame(bool gameWin)
@@ -26,7 +26,9 @@ public class SpearMinigameManager : MonoBehaviour
         if(gameWin)
         {
             FindObjectOfType<TextDisplay>().DisplayText("Fish Caught", 3f);
+            Stats.FishCaught(fish.GetComponent<FishMovement>().GetFishIndex());
             Destroy(fish.gameObject);
+            
         }
         else
         {
@@ -34,11 +36,9 @@ public class SpearMinigameManager : MonoBehaviour
             fish.SetParent(null);
             fish.GetComponent<FishMovement>().enabled = true;
             fish.GetComponent<FishMovement>().CalculateNewDirection();
-
         }
-
         spearMinigame.SetActive(false);
-        FindObjectOfType<FirstPersonController>().enabled = true;
+        Pausing.Resume();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

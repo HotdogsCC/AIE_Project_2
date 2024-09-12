@@ -93,7 +93,10 @@ public class FishRodMinigameManager : MonoBehaviour
 
     public void EndMinigame()
     {
-        Destroy(fishy.gameObject);
+        if(fishy != null)
+        {
+            Destroy(fishy.gameObject);
+        }
         fishy = null;
         isGameRunning = false;
         ui.SetActive(false);
