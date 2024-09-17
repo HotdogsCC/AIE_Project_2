@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
         SetHealthBar();
     }
 
-    public void ChangeHealth(int change)
+    public void ChangeHealth(float change)
     {
         health += change;
         if(health <= 0)
