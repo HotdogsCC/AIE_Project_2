@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3857422125988921198}
   - component: {fileID: 1993431040680914249}
   - component: {fileID: 3717576927902490835}
+  - component: {fileID: 2026647787763848296}
   m_Layer: 0
   m_Name: MDL_LP_Shipreck_Back
   m_TagString: Untagged
@@ -115,6 +116,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2026647787763848296
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6668860874502974634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7424951893996426640, guid: 4671f4bf68d752340b30d5217711b0e4, type: 3}
 --- !u!1 &7119579088036320030
 GameObject:
   m_ObjectHideFlags: 0

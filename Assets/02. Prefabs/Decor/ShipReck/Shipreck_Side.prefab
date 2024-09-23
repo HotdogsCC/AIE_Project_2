@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1299341634203660560}
   - component: {fileID: 5655628549050101391}
   - component: {fileID: 6903502524194283864}
+  - component: {fileID: 6894836091849655144}
   m_Layer: 0
   m_Name: MDL_LP_Shipreck_Side
   m_TagString: Untagged
@@ -115,6 +116,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6894836091849655144
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3738077646446236478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4022634718598416763, guid: c5ec9070a49134c45b9e981f17a2a056, type: 3}
 --- !u!1 &8379905628491860665
 GameObject:
   m_ObjectHideFlags: 0
