@@ -5,28 +5,29 @@ using WaterSystem;
 
 public class WaterVisible : MonoBehaviour
 {
-    private Water water;
+    [SerializeField] private GameObject water;
 
     private void Start()
     {
-        water = GetComponent<Water>();
+        if (water == null)
+        {
+            Debug.Log($"UHHHHH, you forgot to add a reference to the water group for {transform.name}");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.tag == "Player")
+        if(other.transform.tag == "Player" && other.transform.name == "PlayerCapsule")
         {
-            water.enabled = true;
-            Debug.Log("enabaled");
+            water.SetActive(true);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform.tag == "Player")
+        if (other.transform.tag == "Player" && other.transform.name == "PlayerCapsule")
         {
-            water.enabled = false;
-            Debug.Log("disabled");
+            water.SetActive(false);
         }
     }
 }

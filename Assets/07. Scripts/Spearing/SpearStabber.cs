@@ -29,16 +29,9 @@ public class SpearStabber : MonoBehaviour
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        Debug.Log("stab stab");
         if (Physics.Raycast(ray, out hit, 4f, 2048))
         {
-            Debug.Log("i hit a fish");
             manager.StartMinigame(hit.transform, spearTip);          
-        }
-        else if (Physics.Raycast(ray, out hit))
-        {
-            Debug.Log("i hit som,ething ");
-            Debug.Log(hit.transform.name);
         }
     }
 
