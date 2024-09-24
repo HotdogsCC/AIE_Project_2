@@ -17,6 +17,7 @@ public class WaterVisible : MonoBehaviour
         if(other.transform.tag == "Player")
         {
             water.enabled = true;
+            Debug.Log("enabaled");
         }
     }
 
@@ -25,6 +26,7 @@ public class WaterVisible : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             water.enabled = false;
+            Debug.Log("disabled");
         }
     }
 }
