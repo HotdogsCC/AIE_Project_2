@@ -8,6 +8,7 @@ public class GroundWaterManager : MonoBehaviour
 {
     [Header("Important Stuff")]
     [SerializeField] public bool inWater = false;
+    private bool overlap = false;
     [SerializeField] private FirstPersonController firstPersonController;
     [SerializeField] private GameObject fishingRod;
     [SerializeField] private GameObject spear;
@@ -88,21 +89,36 @@ public class GroundWaterManager : MonoBehaviour
     }
 
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "water" && !inWater)
+        if (other.tag == "water")
         {
-            inWater = true;
-            UpdateGroundWaterMovementVars();
+            if(inWater) //If you enter water and are still in water, this is an overlapping area
+            {
+                overlap = true;
+            }
+            else
+            {
+                inWater = true;
+                UpdateGroundWaterMovementVars();
+            }
         }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "water")
         {
-            inWater = false;
-            UpdateGroundWaterMovementVars();
+            if(overlap) //this is to stop issues of exiting water with overlapping water triggers
+            {
+                overlap = false;
+            }
+            else
+            {
+                inWater = false;
+                UpdateGroundWaterMovementVars();
+            }
         }
     }
 
