@@ -2146,6 +2146,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2712825625792048229, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
+      propertyPath: m_Name
+      value: Player Model
+      objectReference: {fileID: 0}
     - target: {fileID: 4453604381680607962, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2211,10 +2216,20 @@ PrefabInstance:
       propertyPath: lookMask.m_Bits
       value: 131072
       objectReference: {fileID: 0}
+    - target: {fileID: 7122340934279011592, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7381223094600342903, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: m_TagString
       value: ItemCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867713332837082112, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a6a6d008cde664b9a422943f132061, type: 3}
