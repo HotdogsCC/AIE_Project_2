@@ -2721,6 +2721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2807,7 +2811,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 11.22
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!1001 &117311783
 PrefabInstance:
@@ -6561,6 +6566,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70bc211ddecb7d046898ab9aa4fc92cc, type: 3}
+--- !u!84 &303864078
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!4 &304323938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 611723152232425267, guid: 5338032db891138488968a329a655bb7,
@@ -7442,6 +7485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7510,7 +7557,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 17.4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!4 &355689647 stripped
 Transform:
@@ -26352,6 +26400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26420,7 +26472,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 17.4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!1001 &1216633138
 PrefabInstance:
@@ -26547,6 +26600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -26621,7 +26678,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 10.59
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!1001 &1223473373
 PrefabInstance:
@@ -27732,6 +27790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -27786,6 +27848,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3759940877608178399, guid: 50eb9776df160964397924c878b2206b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7845684653448362968, guid: 50eb9776df160964397924c878b2206b,
         type: 3}
       propertyPath: m_Size.x
@@ -27806,7 +27873,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 12.7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!1001 &1285716757
 PrefabInstance:
@@ -28467,6 +28535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28541,7 +28613,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 10.59
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!1001 &1324152140
 PrefabInstance:
@@ -30406,6 +30479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1406257128}
+  - component: {fileID: 1406257129}
   m_Layer: 0
   m_Name: Water Shader
   m_TagString: Untagged
@@ -30436,6 +30510,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1406257129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406257127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6edb8448c9b94f018953ca2a6fa5891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  computeOverride: 0
+  _depthTex: {fileID: 303864078}
+  bakedDepthTex: {fileID: 0}
+  _waves:
+  - amplitude: 0.4072035
+    direction: -161.6966
+    wavelength: 4.3740687
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.460577
+    direction: -155.68127
+    wavelength: 5.074243
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.6300539
+    direction: -252.20753
+    wavelength: 4.526372
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.5863462
+    direction: -161.03645
+    wavelength: 6.6174593
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.617294
+    direction: -113.31301
+    wavelength: 7.732057
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.8213833
+    direction: -189.72478
+    wavelength: 11.977346
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.713438
+    direction: -99.83502
+    wavelength: 6.5503073
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 1.1229321
+    direction: -193.7634
+    wavelength: 8.788859
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.9660447
+    direction: -148.55301
+    wavelength: 7.7417502
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 0.9941892
+    direction: -120.98241
+    wavelength: 15.303106
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  settingsData: {fileID: 11400000, guid: a4cacf74654e54b35b9eaea74fd20b4e, type: 2}
+  surfaceData: {fileID: 11400000, guid: 846f3dc3b5341447a86687211f741bc7, type: 2}
+  resources: {fileID: 11400000, guid: 40615c805d6e84ce7800418367985fe1, type: 2}
 --- !u!4 &1407655258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 611723152232425267, guid: 5338032db891138488968a329a655bb7,
@@ -37099,6 +37262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -37173,7 +37340,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 12.7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!4 &1718431599 stripped
 Transform:
@@ -43731,6 +43899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sea (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1015499191777110, guid: 50eb9776df160964397924c878b2206b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4554327062270080, guid: 50eb9776df160964397924c878b2206b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -43817,7 +43989,8 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 11.22
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114943683913522278, guid: 50eb9776df160964397924c878b2206b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50eb9776df160964397924c878b2206b, type: 3}
 --- !u!4 &2104483191 stripped
 Transform:
