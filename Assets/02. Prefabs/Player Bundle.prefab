@@ -2661,6 +2661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4383064931504650972}
   - component: {fileID: 4383064931504650973}
+  - component: {fileID: 727214836873573777}
   m_Layer: 0
   m_Name: Fishing Line
   m_TagString: Untagged
@@ -2782,6 +2783,19 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
+--- !u!114 &727214836873573777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383064931504650975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b09a392e96a4024c922bbae28f1e445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plrBundle: {fileID: 2410276965912011694}
 --- !u!1 &4431472256304312148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,7 +4111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6724908806142429680}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.83, y: 38.005, z: 49.71}
+  m_LocalPosition: {x: -20.12, y: 38.005, z: 112.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
