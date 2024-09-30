@@ -1,6 +1,7 @@
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Pausing : MonoBehaviour
@@ -22,10 +23,17 @@ public class Pausing : MonoBehaviour
         player.enabled = false;
     }
 
+    public static void FreezeBreathing()
+    {
+        Breathe breathe = FindObjectOfType<Breathe>();
+        breathe.enabled = false;
+    }
+
     public static void Freeze()
     {
         FreezeFishes();
         FreezePlayer();
+        FreezeBreathing();
     }
 
     public static void ResumeFishes()
@@ -46,10 +54,17 @@ public class Pausing : MonoBehaviour
         player.enabled = true;
     }
 
+    public static void ResumeBreathing()
+    {
+        Breathe breathe = FindObjectOfType<Breathe>();
+        breathe.enabled = true;
+    }
+
     public static void Resume()
     {
         ResumePlayer();
         ResumeFishes();
+        ResumeBreathing();
     }
 
 }
