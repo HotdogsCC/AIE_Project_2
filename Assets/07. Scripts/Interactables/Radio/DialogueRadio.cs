@@ -5,12 +5,17 @@ using UnityEngine;
 
 public class DialogueRadio : MonoBehaviour
 {
+
     [SerializeField] private List<string> introMessages;
+    [SerializeField] private List<string> upgradeMessages;
     [SerializeField] private List<ConvoSO> conversations;
 
     [SerializeField] private TextMeshProUGUI text;
     [SerializeField] private GameObject mainMenuButtons;
+    [SerializeField] private GameObject upgradeButtons;
     [SerializeField] private GameObject talkButtons;
+
+    [Header("Upgrade Costs")]
 
     private ConvoSO conversation; //Used fpr storing conversation
     private int conversationIndex = 0;
@@ -63,6 +68,12 @@ public class DialogueRadio : MonoBehaviour
         {
             MainMenu();
         }
+    }
+
+    //Run by Upgrade in game button
+    public void UpgradesMenu()
+    {
+
     }
 
 
