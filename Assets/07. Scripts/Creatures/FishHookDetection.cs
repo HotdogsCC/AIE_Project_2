@@ -37,10 +37,8 @@ public class FishHookDetection : MonoBehaviour
         //checks it isnt 'null'
         if(buoyPos != Vector3.zero)
         {
-            Debug.Log("checknig");
             if (Vector3.Distance(transform.position, buoyPos) < radius)
             {
-                Debug.Log("i see that damn rod");
                 fishMovement.ISeeRod(buoyPos);
             }
             else
