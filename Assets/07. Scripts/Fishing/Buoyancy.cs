@@ -7,18 +7,20 @@ public class Buoyancy : MonoBehaviour
     private Rigidbody rb;
     private FishRodMinigameManager manager;
     private Animator animator;
+    private float waterYLevel;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         manager = GameObject.FindObjectOfType<FishRodMinigameManager>();
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();
+        waterYLevel = FindObjectOfType<GroundWaterManager>().GetYLevel();
     }
 
     //makes the buoy "float" on the water by removing gravity and velocity
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        if (other.tag == "water")
+        if(transform.position.y < waterYLevel)
         {
             rb.useGravity = false;
             rb.velocity = Vector3.zero;
@@ -26,10 +28,9 @@ public class Buoyancy : MonoBehaviour
             FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
             foreach (var fish in fishies)
             {
-                fish.GetComponent<SphereCollider>().enabled = true;
+                fish.BuoyInWater(transform.position);
                 fish.GetComponentInParent<BoxCollider>().enabled = true;
             }
-            //manager.StartMinigame();
         }
     }
 

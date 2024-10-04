@@ -1971,17 +1971,17 @@ PrefabInstance:
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.26
+      value: -45.04
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.33
+      value: 34.29
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 48.64
+      value: 54.89
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
@@ -8068,28 +8068,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 955501318}
-  - component: {fileID: 955501316}
-  - component: {fileID: 955501319}
   m_Layer: 10
-  m_Name: Collider
+  m_Name: Water Post Processingh
   m_TagString: water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &955501316
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955501315}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &955501318
 Transform:
   m_ObjectHideFlags: 0
@@ -8106,22 +8091,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &955501319
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955501315}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &955654097
 GameObject:
   m_ObjectHideFlags: 0
@@ -10153,96 +10122,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Bundle
       objectReference: {fileID: 0}
-    - target: {fileID: 2410276965912011695, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2712825625792048229, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_Name
-      value: Player Model
-      objectReference: {fileID: 0}
-    - target: {fileID: 4453604381680607962, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 4453604381680608037, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4453604381680608037, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_TagString
-      value: mainCinemachine
-      objectReference: {fileID: 0}
     - target: {fileID: 6724908806142429682, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: near clip plane
       value: 0.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724908806142429685, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724908806142429685, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724908806142429685, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724908806142429685, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724908806142429685, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724908806142429685, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6724908806142429685, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6907835605806396581, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: interactPopUp
       value: 
       objectReference: {fileID: 243378285}
-    - target: {fileID: 6907835605806396581, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: lookMask.m_Bits
-      value: 131072
-      objectReference: {fileID: 0}
-    - target: {fileID: 7122340934279011592, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7381223094600342903, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_TagString
-      value: ItemCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8867713332837082112, guid: a0a6a6d008cde664b9a422943f132061,
-        type: 3}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a6a6d008cde664b9a422943f132061, type: 3}
 --- !u!1 &1288849647

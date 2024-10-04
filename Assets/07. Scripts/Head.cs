@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,32 +8,25 @@ public class Head : MonoBehaviour
 {
     public bool inWater = false;
     private bool overlap = false;
+    private float waterYLevel = 0f;
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.tag == "water")
+        waterYLevel = FindObjectOfType<GroundWaterManager>().GetYLevel();
+    }
+
+    private void Update()
+    {
+        if (transform.position.y < waterYLevel)
         {
-            if (inWater) //If you enter water and are still in water, this is an overlapping area
-            {
-                overlap = true;
-            }
-            else
+            if (!inWater)
             {
                 inWater = true;
             }
         }
-
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "water")
+        else
         {
-            if (overlap) //this is to stop issues of exiting water with overlapping water triggers
-            {
-                overlap = false;
-            }
-            else
+            if (inWater)
             {
                 inWater = false;
             }

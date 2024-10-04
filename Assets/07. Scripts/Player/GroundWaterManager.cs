@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class GroundWaterManager : MonoBehaviour
 {
+    [Header("Water Y Level")]
+    [SerializeField] private float waterYLevel;
+
     [Header("Important Stuff")]
     [SerializeField] public bool inWater = false;
     private bool overlap = false;
@@ -88,7 +91,7 @@ public class GroundWaterManager : MonoBehaviour
         UpdateGroundWaterMovementVars();
     }
 
-
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "water")
@@ -122,6 +125,28 @@ public class GroundWaterManager : MonoBehaviour
         }
     }
 
+    */
+
+    private void Update()
+    {
+        if(firstPersonController.transform.position.y < waterYLevel)
+        {
+            if(!inWater)
+            {
+                inWater = true;
+                UpdateGroundWaterMovementVars();
+            }
+        }
+        else
+        {
+            if (inWater)
+            {
+                inWater = false;
+                UpdateGroundWaterMovementVars();
+            }
+        }
+    }
+
     private void UpdateGroundWaterMovementVars()
     {
         //sets stuff like speed and stuff based on whether player is walking or swiming
@@ -142,7 +167,7 @@ public class GroundWaterManager : MonoBehaviour
             FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
             foreach (var fish in fishies)
             {
-                fish.GetComponent<SphereCollider>().enabled = true;
+                //fish.GetComponent<SphereCollider>().enabled = true;
                 fish.GetComponentInParent<BoxCollider>().enabled = true;
             }
             spear.SetActive(true);
@@ -171,5 +196,10 @@ public class GroundWaterManager : MonoBehaviour
             spear.SetActive(false);
             fishingRod.SetActive(true);
         }
+    }
+
+    public float GetYLevel()
+    {
+        return waterYLevel;
     }
 }
