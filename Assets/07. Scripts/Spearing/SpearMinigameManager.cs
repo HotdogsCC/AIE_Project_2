@@ -2,10 +2,12 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpearMinigameManager : MonoBehaviour
 {
     [SerializeField] private GameObject spearMinigame;
+    [SerializeField] private Image image;
 
     private Transform fish;
     // Start is called before the first frame update
@@ -14,6 +16,11 @@ public class SpearMinigameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
         fish = inFish;
+        Sprite sprite = fish.GetComponent<FishMovement>().image;
+        if(sprite != null)
+        {
+            image.sprite = sprite;
+        }
         fish.GetComponent<FishMovement>().enabled = false;
         fish.SetParent(spearTip);
         fish.localPosition = Vector3.zero;

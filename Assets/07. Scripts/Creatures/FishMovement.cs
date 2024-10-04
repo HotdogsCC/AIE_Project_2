@@ -23,6 +23,7 @@ public class FishMovement : MonoBehaviour
     [SerializeField] BehaviourMode behaviour = BehaviourMode.neutral;
     [SerializeField] float reactionRadius = 2f;
     [SerializeField] private FishHome home;
+    [SerializeField] public Sprite image;
 
     [Header("Swiming Attributes")]
     [SerializeField] float minSwimDistance = 5f;
