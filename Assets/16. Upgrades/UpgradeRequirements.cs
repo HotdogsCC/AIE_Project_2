@@ -10,4 +10,19 @@ public class UpgradeRequirements : ScriptableObject
 
     [Header("Result of Upgrade")]
     [SerializeField] private float value;
+
+    public byte GetSalmonCost()
+    {
+        return salmon;
+    }
+
+    public byte GetBabaroosaCost()
+    {
+        return babaroosa;
+    }
+
+    public float GetResultOfUpgrade()
+    {
+        return value;
+    }
 }

@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     [SerializeField] private Image healthSlider;
 
     [SerializeField] private float health = 100;
+    private float maxHealth = 100;
 
     private void Start()
     {
@@ -27,8 +28,15 @@ public class Health : MonoBehaviour
         SetHealthBar();
     }
 
+    public void SetMaxHealth(float input)
+    {
+        float healthIncrease = input / maxHealth;
+        maxHealth = input;
+        health *= healthIncrease;
+    }
+
     private void SetHealthBar()
     {
-        healthSlider.fillAmount = health / 100;
+        healthSlider.fillAmount = health / maxHealth;
     }
 }

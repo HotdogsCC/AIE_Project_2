@@ -76,8 +76,9 @@ public class RodFishCaster : MonoBehaviour
         FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
         foreach (var fish in fishies)
         {
-            fish.GetComponent<SphereCollider>().enabled = false;
+            //fish.GetComponent<SphereCollider>().enabled = false;
             fish.GetComponentInParent<FishMovement>().IDontSeeRod();
+            fish.BuoyOutWater();
         }
         buoy.transform.SetParent(endOfFishingLinePos);
         buoy.transform.localPosition = Vector3.zero;

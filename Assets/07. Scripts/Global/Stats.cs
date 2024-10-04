@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Stats : MonoBehaviour
@@ -7,8 +8,8 @@ public class Stats : MonoBehaviour
     private static int normalFishCaught = 0;
     private static int babarusaFishCaught = 0;
 
-    private static int normalFishInv = 0;
-    private static int babarusaFishInv = 0;
+    private static int normalFishInv = 20;
+    private static int babarusaFishInv = 1;
 
     public static int GetNormalFishCaught()
     {
@@ -25,9 +26,28 @@ public class Stats : MonoBehaviour
         return normalFishInv;
     }
 
+    public static void RemoveNormalFishInv(int amount)
+    {
+        Debug.Log("removed " + amount);
+        normalFishInv -= amount;
+        if(normalFishInv < 0)
+        {
+            Debug.Log("HEY! Normal fish has gone below zero. Please check Stats.cs");
+        }
+    }
+
     public static int GetBabarusaFishInv()
     {
         return babarusaFishInv;
+    }
+
+    public static void RemoveBabaroosaFishInv(int amount)
+    {
+        babarusaFishInv -= amount;
+        if (babarusaFishInv < 0)
+        {
+            Debug.Log("HEY! babaroosa fish has gone below zero. Please check Stats.cs");
+        }
     }
 
     public static void FishCaught(int fishIndex)

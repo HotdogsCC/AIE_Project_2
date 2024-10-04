@@ -52,4 +52,9 @@ public class Breathe : MonoBehaviour
         breathSlider.fillAmount = _breathTime / breatheTime;
     }
 
+    public void SetBreatheTime(float input)
+    {
+        breatheTime = input;
+    }
+
 }

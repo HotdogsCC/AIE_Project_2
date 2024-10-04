@@ -14,6 +14,7 @@ public class Radio : Interactable
         Pausing.FreezePlayer();
         Cursor.lockState = CursorLockMode.None;
         RodFishCaster rod = FindObjectOfType<RodFishCaster>();
+        GetComponent<DialogueRadio>().MainMenu();
         rod.enabled = false;
         opened = true;
     }

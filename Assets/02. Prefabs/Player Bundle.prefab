@@ -1534,6 +1534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c307406f13ce71344b4029621b953299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waterYLevel: 34.5
   inWater: 0
   firstPersonController: {fileID: 2035368646022721781}
   fishingRod: {fileID: 6643645327943083354}
@@ -1635,7 +1636,7 @@ MonoBehaviour:
   castDistance: 3
   lookMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 131072
   interactPopUp: {fileID: 0}
 --- !u!1 &2501994652826543528
 GameObject:
@@ -1804,7 +1805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3381697699565352671}
   m_Layer: 0
-  m_Name: Player_New
+  m_Name: Player Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2843,7 +2844,7 @@ GameObject:
   - component: {fileID: 4453604381680607963}
   m_Layer: 0
   m_Name: PlayerFollowCamera
-  m_TagString: Untagged
+  m_TagString: mainCinemachine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4094,7 +4095,6 @@ GameObject:
   - component: {fileID: 6724908806142429683}
   - component: {fileID: 6668730359408244205}
   - component: {fileID: 2410276966460003677}
-  - component: {fileID: 5074014655280079376}
   - component: {fileID: 5756566340941471328}
   m_Layer: 0
   m_Name: MainCamera
@@ -4111,7 +4111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6724908806142429680}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.12, y: 38.005, z: 112.12}
+  m_LocalPosition: {x: 0, y: 1.375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4239,19 +4239,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!135 &5074014655280079376
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6724908806142429680}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5756566340941471328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4590,7 +4577,7 @@ GameObject:
   - component: {fileID: 4907168065295849732}
   m_Layer: 0
   m_Name: ItemCamera
-  m_TagString: Untagged
+  m_TagString: ItemCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -23,6 +23,7 @@ public class FishMovement : MonoBehaviour
     [SerializeField] BehaviourMode behaviour = BehaviourMode.neutral;
     [SerializeField] float reactionRadius = 2f;
     [SerializeField] private FishHome home;
+    [SerializeField] public Sprite image;
 
     [Header("Swiming Attributes")]
     [SerializeField] float minSwimDistance = 5f;
@@ -196,14 +197,15 @@ public class FishMovement : MonoBehaviour
             //Runs when the fish goes into the hook 
             case "hook":
                 FishHookDetection[] fishies = FindObjectsOfType<FishHookDetection>();
+                collision.gameObject.GetComponent<Buoyancy>().enabled = false;
                 foreach (var fish in fishies)
                 {
-                    fish.GetComponent<SphereCollider>().enabled = false;
+                    fish.BuoyOutWater();
                     fish.GetComponentInParent<BoxCollider>().enabled = false;
                     fish.GetComponentInParent<FishMovement>().IDontSeeRod();
                     fish.GetComponentInParent<FishMovement>().CalculateNewDirection();
                 }
-                collision.gameObject.transform.SetParent(transform);
+                collision.gameObject.transform.SetParent(transform);         
                 FindObjectOfType<FishRodMinigameManager>().StartMinigame(fishIconMoveSpeed, fishIconChanceOfChangingDirection, this);
                 break;
 
