@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CoralBunches_Large_Blue
+  m_Name: FlatBase_Auqa
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords:
   - _METALLICSPECGLOSSMAP
@@ -37,7 +37,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: cdb0ff3070638fe4c94920bd7a301d91, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0c8108a04e81c0d419f00e413cc84878, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -61,11 +61,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cdb0ff3070638fe4c94920bd7a301d91, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0c8108a04e81c0d419f00e413cc84878, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 21671bb2c7eb6a846a067a3f6080c63c, type: 3}
+        m_Texture: {fileID: 2800000, guid: afc9d999a378bfa4081434967280590c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

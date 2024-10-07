@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4607878018200460929}
   m_Layer: 0
-  m_Name: FlatCoral_Base_Red
+  m_Name: FlatCoral_Base_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 93eb0195fd3271f429f6ee6f3fe08c70, type: 2}
+  - {fileID: 2100000, guid: 05f33126cd324e249944f3ca57a609be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
