@@ -44527,6 +44527,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -55.798
       objectReference: {fileID: 0}
+    - target: {fileID: 178117200692157678, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
+      propertyPath: waterYLevel
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 1203249066827173517, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: m_LocalRotation.w
