@@ -16,7 +16,8 @@ public abstract class Interactable : MonoBehaviour
 
     public void LookedAt()
     {
-        if(outline != null)
+        outline = GetComponent<Outline>();
+        if (outline != null)
         {
             outline.OutlineWidth = 3;
         }
