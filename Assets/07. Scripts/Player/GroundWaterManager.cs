@@ -18,6 +18,8 @@ public class GroundWaterManager : MonoBehaviour
     [SerializeField] private FirstPersonController firstPersonController;
     [SerializeField] private GameObject fishingRod;
     [SerializeField] private GameObject spear;
+    [SerializeField] private GameObject walkSFX;
+    private bool moving = false;
 
     [Header("Ground Variables")]
     [Space(10)]
@@ -92,6 +94,7 @@ public class GroundWaterManager : MonoBehaviour
     void Start()
     {
         UpdateGroundWaterMovementVars();
+        StartCoroutine(TryPlaySound());
     }
 
     private void OnTriggerEnter(Collider other)
@@ -155,6 +158,25 @@ public class GroundWaterManager : MonoBehaviour
                 }
             }
         }
+
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            moving = true;
+        }
+        else
+        {
+            moving = false;
+        }
+    }
+
+    private IEnumerator TryPlaySound()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if(moving)
+        {
+            Instantiate(walkSFX);
+        }
+        StartCoroutine(TryPlaySound());
     }
 
     private void UpdateGroundWaterMovementVars()
