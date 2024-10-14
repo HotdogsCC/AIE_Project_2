@@ -10860,6 +10860,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 178117200692157678, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
+      propertyPath: waterYLevelDetectMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2410276965912011694, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: m_RootOrder
