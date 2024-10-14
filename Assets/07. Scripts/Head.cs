@@ -9,26 +9,68 @@ public class Head : MonoBehaviour
     public bool inWater = false;
     private bool overlap = false;
     private float waterYLevel = 0f;
+    private bool waterYLevelDetectMode = false;
 
     private void Start()
     {
         waterYLevel = FindObjectOfType<GroundWaterManager>().GetYLevel();
+        waterYLevelDetectMode = FindAnyObjectByType<GroundWaterManager>().GetDetectMode();
     }
 
     private void Update()
     {
-        if (transform.position.y < waterYLevel)
+        if(waterYLevelDetectMode)
         {
-            if (!inWater)
+            if (transform.position.y < waterYLevel)
             {
-                inWater = true;
+                if (!inWater)
+                {
+                    inWater = true;
+                }
+            }
+            else
+            {
+                if (inWater)
+                {
+                    inWater = false;
+                }
             }
         }
-        else
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!waterYLevelDetectMode)
         {
-            if (inWater)
+            if (other.tag == "water")
             {
-                inWater = false;
+                if (inWater) //If you enter water and are still in water, this is an overlapping area
+                {
+                    overlap = true;
+                }
+                else
+                {
+                    inWater = true;
+                }
+            }
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (!waterYLevelDetectMode)
+        {
+            if (other.tag == "water")
+            {
+                if (overlap) //this is to stop issues of exiting water with overlapping water triggers
+                {
+                    overlap = false;
+                }
+                else
+                {
+                    inWater = false;
+                }
             }
         }
     }

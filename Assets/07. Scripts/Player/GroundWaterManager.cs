@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class GroundWaterManager : MonoBehaviour
 {
+    [Header("CHECK ME!!")]
+    [SerializeField] private bool waterYLevelDetectMode = false;
+
     [Header("Water Y Level")]
     [SerializeField] private float waterYLevel;
 
@@ -91,19 +94,21 @@ public class GroundWaterManager : MonoBehaviour
         UpdateGroundWaterMovementVars();
     }
 
-    /*
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "water")
+        if(!waterYLevelDetectMode)
         {
-            if(inWater) //If you enter water and are still in water, this is an overlapping area
+            if (other.tag == "water")
             {
-                overlap = true;
-            }
-            else
-            {
-                inWater = true;
-                UpdateGroundWaterMovementVars();
+                if (inWater) //If you enter water and are still in water, this is an overlapping area
+                {
+                    overlap = true;
+                }
+                else
+                {
+                    inWater = true;
+                    UpdateGroundWaterMovementVars();
+                }
             }
         }
 
@@ -111,38 +116,43 @@ public class GroundWaterManager : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "water")
+        if(!waterYLevelDetectMode)
         {
-            if(overlap) //this is to stop issues of exiting water with overlapping water triggers
+            if (other.tag == "water")
             {
-                overlap = false;
-            }
-            else
-            {
-                inWater = false;
-                UpdateGroundWaterMovementVars();
+                if (overlap) //this is to stop issues of exiting water with overlapping water triggers
+                {
+                    overlap = false;
+                }
+                else
+                {
+                    inWater = false;
+                    UpdateGroundWaterMovementVars();
+                }
             }
         }
     }
 
-    */
 
     private void Update()
     {
-        if(firstPersonController.transform.position.y < waterYLevel)
+        if(waterYLevelDetectMode)
         {
-            if(!inWater)
+            if (firstPersonController.transform.position.y < waterYLevel)
             {
-                inWater = true;
-                UpdateGroundWaterMovementVars();
+                if (!inWater)
+                {
+                    inWater = true;
+                    UpdateGroundWaterMovementVars();
+                }
             }
-        }
-        else
-        {
-            if (inWater)
+            else
             {
-                inWater = false;
-                UpdateGroundWaterMovementVars();
+                if (inWater)
+                {
+                    inWater = false;
+                    UpdateGroundWaterMovementVars();
+                }
             }
         }
     }
@@ -201,5 +211,11 @@ public class GroundWaterManager : MonoBehaviour
     public float GetYLevel()
     {
         return waterYLevel;
+    }
+
+
+    public bool GetDetectMode()
+    {
+        return waterYLevelDetectMode;
     }
 }
