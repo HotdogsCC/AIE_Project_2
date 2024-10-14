@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 332155534010972358}
   - component: {fileID: 332155534010972359}
   m_Layer: 11
-  m_Name: Babirusa
+  m_Name: BabirusaDarter
   m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
