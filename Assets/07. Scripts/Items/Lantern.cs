@@ -8,6 +8,7 @@ public class Lantern : MonoBehaviour
     [SerializeField] private Material glowMat;
     [SerializeField] private Light lanturnLight;
 
+    [SerializeField] private float intensSpeed = 10f;
     private Color glowColor = new Color(0.7490196f, 0.2235294f, 0f);
     private float glowIntensity = 1f;
     private float lightIntensity = 2000f;
@@ -16,8 +17,7 @@ public class Lantern : MonoBehaviour
 
     private void Start()
     {
-        glowMat.color = glowColor * glowIntensity * 2;
-        lanturnLight.intensity = lightIntensity;
+        UpdateLantern();
     }
 
     // Update is called once per frame
@@ -30,11 +30,28 @@ public class Lantern : MonoBehaviour
             if(isOn)
             {
                 lanternObj.SetActive(true);
+                
             }
             else
             {
                 lanternObj.SetActive(false);
             }
         }
+
+        if(isOn)
+        {
+            glowIntensity -= Time.deltaTime / intensSpeed;
+            if(glowIntensity <= 0)
+            {
+                glowIntensity = 0;
+            }
+            UpdateLantern();
+        }
+    }
+
+    private void UpdateLantern()
+    {
+        glowMat.color = glowColor * glowIntensity * 2;
+        lanturnLight.intensity = lightIntensity * glowIntensity;
     }
 }
