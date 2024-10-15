@@ -10,6 +10,8 @@ public class Breathe : MonoBehaviour
     [SerializeField] private float breatheTime = 30f;
     [SerializeField] private float breatheRecoverySpeed = 15f;
     [SerializeField] private float outOfBreathDamage = 20f;
+    [SerializeField] private GameObject chokingSFX;
+    private bool playSFX = true;
 
     private float _breathTime = 30f;
 
@@ -32,6 +34,11 @@ public class Breathe : MonoBehaviour
             {
                 _breathTime = 0;
                 health.ChangeHealth(-1f * outOfBreathDamage * Time.deltaTime);
+                if(playSFX)
+                {
+                    Instantiate(chokingSFX);
+                    playSFX = false;
+                }
             }
         }
         else
@@ -41,6 +48,7 @@ public class Breathe : MonoBehaviour
             if (_breathTime > breatheTime)
             {
                 _breathTime = breatheTime;
+                playSFX = true;
             }
         }
 

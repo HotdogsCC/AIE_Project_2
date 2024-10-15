@@ -173,7 +173,7 @@ public class GroundWaterManager : MonoBehaviour
     private IEnumerator TryPlaySound()
     {
         yield return new WaitForSeconds(0.5f);
-        if(moving)
+        if(moving && !inWater)
         {
             Instantiate(walkSFX);
         }

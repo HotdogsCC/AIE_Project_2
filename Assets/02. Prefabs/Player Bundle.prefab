@@ -1742,6 +1742,7 @@ MonoBehaviour:
   fishingRod: {fileID: 6643645327943083354}
   spear: {fileID: 6643645327983752770}
   walkSFX: {fileID: 332792735064880079, guid: b596b6aca606b1848a5c2c27288508ff, type: 3}
+  fishingLine: {fileID: 0}
   groundMoveSpeed: 4
   groundSprintSpeed: 6
   groundRotationSpeed: 1
@@ -4483,6 +4484,8 @@ MonoBehaviour:
   buoyGO: {fileID: 6643645326845933698}
   lineRenderer: {fileID: 4383064931504650973}
   buoy: {fileID: 6643645327913994136}
+  rodCastSFX: {fileID: 332792735064880079, guid: 64f0380169a5f5c4583a1ed7d90c3dcd,
+    type: 3}
 --- !u!1 &6643645327983752770
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,6 +4757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inWater: 0
+  breathSFX: {fileID: 0}
 --- !u!1 &6748349253457521646
 GameObject:
   m_ObjectHideFlags: 0

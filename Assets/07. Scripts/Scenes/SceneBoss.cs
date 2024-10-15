@@ -10,6 +10,7 @@ public class SceneBoss : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     public void LoadScene(int sceneIndex)
     {
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(sceneIndex);
     }
 

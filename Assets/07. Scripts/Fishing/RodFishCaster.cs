@@ -14,6 +14,7 @@ public class RodFishCaster : MonoBehaviour
     [SerializeField] private Transform buoyGO;
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private GameObject buoy;
+    [SerializeField] private GameObject rodCastSFX;
     private bool isCast = false;
     private float chargeForce = 0;
 
@@ -59,6 +60,7 @@ public class RodFishCaster : MonoBehaviour
     {
         //makes it so the buoy has gravity and chucks a force on it
         isCast = true;
+        Instantiate(rodCastSFX);
         buoy.GetComponent<Buoyancy>().enabled = true;
         buoy.GetComponentInChildren<SphereCollider>().enabled = true;
         buoy.transform.SetParent(null);

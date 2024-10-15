@@ -4236,6 +4236,8 @@ MonoBehaviour:
   breatheTime: 30
   breatheRecoverySpeed: 15
   outOfBreathDamage: 20
+  chokingSFX: {fileID: 332792735064880079, guid: 12c9b292e04be234cae86d5a12859c87,
+    type: 3}
 --- !u!1 &8616211770347278799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,6 +4526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1120148836}
+  biteSFX: {fileID: 332792735064880079, guid: 039cb7b3df57d9b4cafd12ba8ae28a74, type: 3}
 --- !u!114 &1120148836
 MonoBehaviour:
   m_ObjectHideFlags: 0

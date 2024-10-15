@@ -21,6 +21,7 @@ public class FishRodMinigameManager : MonoBehaviour
     [SerializeField] private Slider fishHighlightSlider;
     [SerializeField] private Slider fishLocationSlider;
     [SerializeField] private Image highlighter;
+    [SerializeField] private GameObject sfx;
 
     private float catchProgressPercentage;
     private bool isGameRunning = false;
@@ -89,6 +90,7 @@ public class FishRodMinigameManager : MonoBehaviour
         player.PreventJump();
         player.enabled = false;
         tutorial.FishingTut();
+        Instantiate(sfx);
     }
 
     public void EndMinigame()

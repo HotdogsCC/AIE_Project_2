@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class FishBiteScare : MonoBehaviour
 {
     [SerializeField] Image image;
+    [SerializeField] GameObject biteSFX;
     float t = 1;
 
     private void Update()
@@ -17,5 +18,6 @@ public class FishBiteScare : MonoBehaviour
     public void Scare()
     {
         t = 0;
+        Instantiate(biteSFX);
     }
 }
