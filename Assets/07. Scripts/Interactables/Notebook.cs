@@ -13,6 +13,9 @@ public class Notebook : Interactable
 
     public override void Interact()
     {
+        RodFishCaster rod = FindObjectOfType<RodFishCaster>();
+        rod.ReelLine();
+        rod.enabled = false;
         GameObject.FindGameObjectWithTag("mainCinemachine").GetComponent<CinemachineVirtualCamera>().enabled = false;
         FindFirstObjectByType<FirstPersonController>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
@@ -35,6 +38,8 @@ public class Notebook : Interactable
                 GetComponent<BoxCollider>().enabled = true;
                 GameObject.FindGameObjectWithTag("ItemCamera").GetComponent<Camera>().enabled = true;
                 opened = false;
+                RodFishCaster rod = FindObjectOfType<RodFishCaster>();
+                rod.enabled = true;
             }
         }
     }

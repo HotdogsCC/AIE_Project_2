@@ -204,6 +204,8 @@ public class GroundWaterManager : MonoBehaviour
                 fish.GetComponentInParent<BoxCollider>().enabled = true;
             }
             spear.SetActive(true);
+            fishingRod.GetComponent<RodFishCaster>().ReelLine();
+            fishingRod.GetComponent<RodFishCaster>().SetCast();
             fishingRod.SetActive(false);
             fishingLine.SetActive(false);
         }

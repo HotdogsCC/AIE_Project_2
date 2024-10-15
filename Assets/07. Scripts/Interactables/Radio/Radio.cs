@@ -14,6 +14,7 @@ public class Radio : Interactable
         Pausing.FreezePlayer();
         RodFishCaster rod = FindObjectOfType<RodFishCaster>();
         GetComponent<DialogueRadio>().MainMenu();
+        rod.ReelLine();
         rod.enabled = false;
         opened = true; 
         Cursor.lockState = CursorLockMode.None;
@@ -22,7 +23,7 @@ public class Radio : Interactable
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && opened)
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)) && opened)
         {
             QuitRadio();
         }
