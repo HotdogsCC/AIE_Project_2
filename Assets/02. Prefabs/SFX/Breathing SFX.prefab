@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 332792735064880073}
   - component: {fileID: 332792735064880072}
   m_Layer: 0
-  m_Name: Walk SFX
+  m_Name: Breathing SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,12 +48,6 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: 2cb91b6df458a614787fe9c34f5720bf, type: 3}
   - {fileID: 8300000, guid: 5cf59a497d1770b4a852cb8801681b28, type: 3}
-  - {fileID: 8300000, guid: 22489dcf7ca779d4eb0e80de98a74c59, type: 3}
-  - {fileID: 8300000, guid: 13303adfa049ede4c8da229e0800164f, type: 3}
-  - {fileID: 8300000, guid: bd36c1cc288f9c54c930a0456880c835, type: 3}
-  - {fileID: 8300000, guid: 5af612886d027d84abbdd5d1b05bbd30, type: 3}
-  - {fileID: 8300000, guid: f92f02bbfd15ec646825e771c3938039, type: 3}
-  - {fileID: 8300000, guid: b51b88f28d2bb60469ba3f6ef3e77dae, type: 3}
   audioSource: {fileID: 332792735064880072}
 --- !u!82 &332792735064880072
 AudioSource:

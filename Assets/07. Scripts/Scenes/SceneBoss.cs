@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneBoss : MonoBehaviour
 {
     [SerializeField] GameObject transitionGraphic;
+    [SerializeField] private TextMeshProUGUI text;
     public void LoadScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
@@ -20,7 +22,12 @@ public class SceneBoss : MonoBehaviour
 
     IEnumerator LoadGamePt2(string sceneName)
     {
-        yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadSceneAsync(sceneName);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+
+        while(!operation.isDone)
+        {
+            text.text = operation.progress.ToString();
+            yield return null;
+        }
     }
 }
