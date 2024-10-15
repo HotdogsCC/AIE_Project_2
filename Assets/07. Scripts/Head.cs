@@ -10,6 +10,7 @@ public class Head : MonoBehaviour
     private bool overlap = false;
     private float waterYLevel = 0f;
     private bool waterYLevelDetectMode = false;
+    [SerializeField] GameObject breathSFX;
 
     private void Start()
     {
@@ -33,6 +34,7 @@ public class Head : MonoBehaviour
                 if (inWater)
                 {
                     inWater = false;
+                    Instantiate(breathSFX);
                 }
             }
         }

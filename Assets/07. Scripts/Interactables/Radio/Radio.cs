@@ -12,11 +12,12 @@ public class Radio : Interactable
         Debug.Log("opened radio");
         radioUI.SetActive(true);
         Pausing.FreezePlayer();
-        Cursor.lockState = CursorLockMode.None;
         RodFishCaster rod = FindObjectOfType<RodFishCaster>();
         GetComponent<DialogueRadio>().MainMenu();
         rod.enabled = false;
-        opened = true;
+        opened = true; 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void Update()

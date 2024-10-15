@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RodFishCaster : MonoBehaviour
@@ -115,4 +116,5 @@ public class RodFishCaster : MonoBehaviour
         lineRenderer.SetPosition(0, topOfFishingLine.position);
         lineRenderer.SetPosition(1, buoyGO.position);
     }
+
 }

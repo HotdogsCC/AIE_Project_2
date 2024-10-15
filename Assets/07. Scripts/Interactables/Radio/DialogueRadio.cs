@@ -46,6 +46,7 @@ public class DialogueRadio : MonoBehaviour
 
     public void MainMenu()
     {
+
         //Shows the correct buttons
         mainMenuButtons.SetActive(true);
         talkButtons.SetActive(false);

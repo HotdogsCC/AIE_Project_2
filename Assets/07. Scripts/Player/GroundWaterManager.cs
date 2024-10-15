@@ -19,6 +19,7 @@ public class GroundWaterManager : MonoBehaviour
     [SerializeField] private GameObject fishingRod;
     [SerializeField] private GameObject spear;
     [SerializeField] private GameObject walkSFX;
+    [SerializeField] private GameObject fishingLine;
     private bool moving = false;
 
     [Header("Ground Variables")]
@@ -204,6 +205,7 @@ public class GroundWaterManager : MonoBehaviour
             }
             spear.SetActive(true);
             fishingRod.SetActive(false);
+            fishingLine.SetActive(false);
         }
         else
         {
@@ -227,7 +229,9 @@ public class GroundWaterManager : MonoBehaviour
             }
             spear.SetActive(false);
             fishingRod.SetActive(true);
+            fishingLine.SetActive(true);
         }
+        
     }
 
     public float GetYLevel()

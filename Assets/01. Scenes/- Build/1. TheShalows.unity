@@ -12179,7 +12179,8 @@ AudioSource:
   m_GameObject: {fileID: 1200283950}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 402a1368e25e6314e92d51238a6360c6,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: fe2b4daece5a4fd42a2d0bed4647c6cb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
@@ -13022,6 +13023,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 178117200692157678, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
+      propertyPath: fishingLine
+      value: 
+      objectReference: {fileID: 1786018092}
+    - target: {fileID: 178117200692157678, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
       propertyPath: waterYLevelDetectMode
       value: 1
       objectReference: {fileID: 0}
@@ -13085,6 +13091,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Bundle
       objectReference: {fileID: 0}
+    - target: {fileID: 5756566340941471328, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
+      propertyPath: breathSFX
+      value: 
+      objectReference: {fileID: 332792735064880079, guid: ca6936622381f454c8bbd500c83fc408,
+        type: 3}
     - target: {fileID: 6724908806142429682, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: near clip plane
@@ -13157,7 +13169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeOverride: 0
-  _depthTex: {fileID: 1425067546}
+  _depthTex: {fileID: 1959708644}
   bakedDepthTex: {fileID: 0}
   _waves:
   - amplitude: 0.4072035
@@ -14640,44 +14652,6 @@ Transform:
   m_Father: {fileID: 1149400215}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &1425067546
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &1435364392
 GameObject:
   m_ObjectHideFlags: 0
@@ -18364,6 +18338,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1786018092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4383064931504650975, guid: a0a6a6d008cde664b9a422943f132061,
+    type: 3}
+  m_PrefabInstance: {fileID: 1283061822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1804371231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19913,6 +19893,44 @@ Transform:
   m_Father: {fileID: 1149400215}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1959708644
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1960007305
 GameObject:
   m_ObjectHideFlags: 0
