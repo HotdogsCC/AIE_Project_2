@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e3a230c40688064cb008695adb0dbe1, type: 3}
-  m_Name: Burger King
+  m_Name: Talk Conversation 2
   m_EditorClassIdentifier: 
   statements:
-  - I'm in the drive thru of Burger King
-  - Can I please get a Whopper Jr. with onion rings?
-  - Make it a meal so I can get a drink
-  - 'No I''m not finished, that''s not everythin'' '
+  - I learned something interesting today!
+  - Did you know sailors and fishermen of old
+  - would tell a tale about an angelic voice
+  - singing out to them in the middle of the ocean!
+  - but to be honest its most likely just a bunch of drunk guys talking

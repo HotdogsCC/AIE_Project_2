@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3a230c40688064cb008695adb0dbe1, type: 3}
+  m_Name: Talk Conversation 6
+  m_EditorClassIdentifier: 
+  statements:
+  - I know it might be quite lonely out there by yourself
+  - but if you love me so much I am sure you would be doing this for me
+  - I am sure you remember the conversation we had before right?
+  - what? you don't?
+  - Well it wasn't anything imporant to you then I guess
+  - Just enjoy yourself okay? Let me know if you do end up
+  - Finding that gigantic creature agian.
