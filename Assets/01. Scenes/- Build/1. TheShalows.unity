@@ -5311,12 +5311,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 793378223, guid: 32052e66af0c27f468ff28ce0a41dd9c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839032231, guid: 32052e66af0c27f468ff28ce0a41dd9c, type: 3}
+      propertyPath: m_text
+      value: 'Move Mouse Up and Down to move Green Box,
+
+        Keep Fish within
+        the green box to reel in Fish'
+      objectReference: {fileID: 0}
     - target: {fileID: 6623862145207629819, guid: 32052e66af0c27f468ff28ce0a41dd9c,
         type: 3}
       propertyPath: sfx
       value: 
       objectReference: {fileID: 332792735064880079, guid: 0d698a43856cc2441a190338f61802c8,
         type: 3}
+    - target: {fileID: 6623862145207629819, guid: 32052e66af0c27f468ff28ce0a41dd9c,
+        type: 3}
+      propertyPath: startingFishPercentage
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6623862146045084818, guid: 32052e66af0c27f468ff28ce0a41dd9c,
         type: 3}
       propertyPath: m_Pivot.x
