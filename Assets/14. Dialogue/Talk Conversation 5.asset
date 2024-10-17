@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Talk Conversation 5
   m_EditorClassIdentifier: 
   statements:
-  - Hey look I know being away from home for sometime
-  - can be lonley and un desirable.
-  - But I have been really enjoying seafood recently
-  - and the standard stuff hasn't really hit the spot.
-  - Maybe while your out there you would find
-  - that creature you saw all those years ago?
+  - Hey look I know being away from home for sometime can be lonley and undesirable.
+  - But I have been really enjoying seafood recently and the standard stuff hasn't
+    really hit the spot.
+  - Maybe while your out there you would find that creature you saw all those years
+    ago?
+  - Wouldn't that be great? THen you can finally show all of your family that never
+    believed what you said.

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3263fe3d3e0d9654aad757b313614eea, type: 3}
   m_Name: Swim-1
   m_EditorClassIdentifier: 
-  salmon: 10
-  babaroosa: 0
+  salmon: 5
+  babaroosa: 10
   value: 5

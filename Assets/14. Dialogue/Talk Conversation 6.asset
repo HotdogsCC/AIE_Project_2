@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Talk Conversation 6
   m_EditorClassIdentifier: 
   statements:
-  - I know it might be quite lonely out there by yourself
-  - but if you love me so much I am sure you would be doing this for me
-  - I am sure you remember the conversation we had before right?
-  - what? you don't?
-  - Well it wasn't anything imporant to you then I guess
-  - Just enjoy yourself okay? Let me know if you do end up
-  - Finding that gigantic creature agian.
+  - I know it might be quite lonely out there by yourself but if you love me so much
+    I am sure you would be doing this for me
+  - I am sure you remember the conversation we had before right? what? you don't?
+  - Well it wasn't anything imporant to you then I guess Just enjoy yourself okay?
+    Let me know if you do end up
+  - finding that mysterious creature of the sea you keep talkign about.

@@ -10052,7 +10052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: conversations.Array.size
-      value: 6
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: introMessages.Array.size
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: healthUpgrades.Array.size
@@ -10097,6 +10101,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 82e5123005c529a4195de658e9991fc8,
         type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: conversations.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c65e795c50cb8d438ac018220640747,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: conversations.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ec00f5bf15569840b9930af4811f644,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: conversations.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4ab620d657b92a24ea270fb2da885c76,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: conversations.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: b80811a35a2349e47b37c17ce57e3a95,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: introMessages.Array.data[3]
+      value: Hey how is it going?
+      objectReference: {fileID: 0}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: introMessages.Array.data[4]
+      value: Been a while, whats going on?
+      objectReference: {fileID: 0}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: introMessages.Array.data[5]
+      value: Need something?
+      objectReference: {fileID: 0}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: introMessages.Array.data[6]
+      value: Theres so much I want to say but you first.
+      objectReference: {fileID: 0}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: healthUpgrades.Array.data[0]
       value: 

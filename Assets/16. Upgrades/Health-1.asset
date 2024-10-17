@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3263fe3d3e0d9654aad757b313614eea, type: 3}
   m_Name: Health-1
   m_EditorClassIdentifier: 
-  salmon: 5
-  babaroosa: 1
-  value: 5
+  salmon: 20
+  babaroosa: 5
+  value: 10

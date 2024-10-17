@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Talk Conversation 2
   m_EditorClassIdentifier: 
   statements:
-  - I learned something interesting today!
-  - Did you know sailors and fishermen of old
-  - would tell a tale about an angelic voice
-  - singing out to them in the middle of the ocean!
+  - I learned something interesting today! Did you know sailors and fishermen of
+    old
+  - would tell a tale about an angelic voice, singing out to them in the middle of
+    the ocean!
   - but to be honest its most likely just a bunch of drunk guys talking
