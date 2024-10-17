@@ -7949,6 +7949,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1903076207}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &907472246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4383064931504650975, guid: a0a6a6d008cde664b9a422943f132061,
+    type: 3}
+  m_PrefabInstance: {fileID: 6643645327821648781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &909828174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16692,6 +16698,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -55.798
       objectReference: {fileID: 0}
+    - target: {fileID: 178117200692157678, guid: a0a6a6d008cde664b9a422943f132061,
+        type: 3}
+      propertyPath: fishingLine
+      value: 
+      objectReference: {fileID: 907472246}
     - target: {fileID: 178117200692157678, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: waterYLevel
