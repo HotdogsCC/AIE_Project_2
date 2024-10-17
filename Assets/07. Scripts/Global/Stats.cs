@@ -8,8 +8,8 @@ public class Stats : MonoBehaviour
     private static int normalFishCaught = 0;
     private static int babarusaFishCaught = 0;
 
-    private static int normalFishInv = 20;
-    private static int babarusaFishInv = 1;
+    private static int normalFishInv = 0;
+    private static int babarusaFishInv = 0;
 
     public static int GetNormalFishCaught()
     {
