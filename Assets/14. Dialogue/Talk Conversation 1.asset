@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Talk Conversation 1
   m_EditorClassIdentifier: 
   statements:
-  - How is it going out and about?
   - Hm? how was my day?
-  - Well first I got up and brushed my hair
-  - Then I brushed my teeth
-  - Got ready for work
-  - Hated it, the type of people who come in the and think they just own the place.
-  - I can't wait to see what type of fish you end up sending back my way.
+  - Well first I got up and brushed my hair, then I brushed my teeth
+  - Got ready for work, Hated it, the type of people who come in the and think they
+    just own the place.
+  - How about you? hows chasing the big one going?
+  - No sight of it huh. Don't worry im sure that if you keep looking it will eventually
+    turn up!
