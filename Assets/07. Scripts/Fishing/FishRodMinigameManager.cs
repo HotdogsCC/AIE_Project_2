@@ -22,6 +22,7 @@ public class FishRodMinigameManager : MonoBehaviour
     [SerializeField] private Slider fishLocationSlider;
     [SerializeField] private Image highlighter;
     [SerializeField] private GameObject sfx;
+    [SerializeField] private Image progressBar;
 
     private float catchProgressPercentage;
     private bool isGameRunning = false;
@@ -81,6 +82,7 @@ public class FishRodMinigameManager : MonoBehaviour
         //debugText.text = temp.ToString();
 
         compassSpinner.SetRotation(-0.8f * catchProgressPercentage + 40);
+        progressBar.fillAmount = catchProgressPercentage / 100f;
     }
 
     public void StartMinigame(float _moveSpeed, int _chanceOfMoveDirection, FishMovement _fishy)
