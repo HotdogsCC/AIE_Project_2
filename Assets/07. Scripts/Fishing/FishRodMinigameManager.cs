@@ -27,6 +27,7 @@ public class FishRodMinigameManager : MonoBehaviour
     private bool isGameRunning = false;
     private TutorialPopUp tutorial;
     private FishMovement fishy = null;
+    private CompassSpinner compassSpinner;
 
     //REMOVE BEFORE RELEASE - debug stuff
     [SerializeField] private TextMeshProUGUI debugText;
@@ -36,6 +37,7 @@ public class FishRodMinigameManager : MonoBehaviour
     {
         catchProgressPercentage = startingFishPercentage;
         tutorial = FindFirstObjectByType<TutorialPopUp>();
+        
     }
 
     // Update is called once per frame
@@ -75,8 +77,10 @@ public class FishRodMinigameManager : MonoBehaviour
         }
 
         //REMOVE BEFORE RELEASE - debug stuff
-        int temp = (int)catchProgressPercentage;
-        debugText.text = temp.ToString();
+        //int temp = (int)catchProgressPercentage;
+        //debugText.text = temp.ToString();
+
+        compassSpinner.SetRotation(-0.8f * catchProgressPercentage + 40);
     }
 
     public void StartMinigame(float _moveSpeed, int _chanceOfMoveDirection, FishMovement _fishy)
@@ -91,6 +95,7 @@ public class FishRodMinigameManager : MonoBehaviour
         player.enabled = false;
         tutorial.FishingTut();
         Instantiate(sfx);
+        compassSpinner = FindObjectOfType<CompassSpinner>();
     }
 
     public void EndMinigame()

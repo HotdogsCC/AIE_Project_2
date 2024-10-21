@@ -13,6 +13,11 @@ public class CompassSpinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(Time.timeSinceLevelLoad) * 30f);
+        //transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(Time.timeSinceLevelLoad) * 30f);
+    }
+
+    public void SetRotation(float rot)
+    {
+        transform.rotation = Quaternion.Euler(0, 0, rot);
     }
 }
