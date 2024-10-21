@@ -8,9 +8,14 @@ public class SpearMinigameManager : MonoBehaviour
 {
     [SerializeField] private GameObject spearMinigame;
     [SerializeField] private Image image;
+    private TutorialPopUp tutorial;
 
     private Transform fish;
     // Start is called before the first frame update
+    private void Start()
+    {
+        tutorial = FindFirstObjectByType<TutorialPopUp>();
+    }
     public void StartMinigame(Transform inFish, Transform spearTip)
     {
         Cursor.lockState = CursorLockMode.Confined;
@@ -25,6 +30,7 @@ public class SpearMinigameManager : MonoBehaviour
         fish.SetParent(spearTip);
         fish.localPosition = Vector3.zero;
         spearMinigame.SetActive(true);
+        tutorial.SpearingTut();
         Pausing.Freeze();
     }
 
