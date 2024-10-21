@@ -15,6 +15,7 @@ TagManager:
   - hidingSpot
   - mainCinemachine
   - ItemCamera
+  - Items
   layers:
   - Default
   - TransparentFX
