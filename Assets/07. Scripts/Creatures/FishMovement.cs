@@ -16,7 +16,7 @@ public class FishMovement : MonoBehaviour
     private GroundWaterManager waterManager;
 
     private enum BehaviourMode { neutral, aggresive, scared, faceFish, coralFish };
-    private enum FishName { normal, babarusa };
+    private enum FishName { normal, babarusa, faceFish, coralFish, boxFish, lampery, eyeless, lureJaw};
 
     [Header("Identity Atrributes")]
     [SerializeField] FishName fishName = FishName.normal;

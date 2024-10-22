@@ -26,8 +26,8 @@ public class Notebook : Interactable
     private void Update()
     {
         text.text = 
-            $"Normal fish caught: {Stats.GetNormalFishCaught()}\n" +
-            $"Babarusa caught : {Stats.GetBabarusaFishCaught()}";
+            $"Normal fish caught: {Stats.GetFishCaught(0)}\n" +
+            $"Babarusa caught : {Stats.GetFishCaught(1)}";
 
         if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape))
         {

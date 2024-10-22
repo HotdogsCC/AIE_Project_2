@@ -97,10 +97,43 @@ public class DialogueRadio : MonoBehaviour
 Breath: {breatheUpgrades[breatheLevel].GetSalmonCost()} salmon, {breatheUpgrades[breatheLevel].GetBabaroosaCost()} babaroosa
 Health: {healthUpgrades[healthLevel].GetSalmonCost()} salmon, {healthUpgrades[healthLevel].GetBabaroosaCost()} babaroosa
 
-You have: {Stats.GetNormalFishInv()} salmon, {Stats.GetBabarusaFishInv()} babaroosa";
+You have: {Stats.GetFishInv(0)} salmon, {Stats.GetFishInv(1)} babaroosa";
+
+        //doesn't display the cost if it is 0
+        text.text = "Speed: ";
+        if (swimUpgrades[speedLevel].GetSalmonCost() != 0)
+        {
+            text.text += $"{swimUpgrades[speedLevel].GetSalmonCost()} salmon, ";
+        }
+        if (swimUpgrades[speedLevel].GetBabaroosaCost() != 0)
+        {
+            text.text += $"{swimUpgrades[speedLevel].GetBabaroosaCost()} babaroosa, ";
+        }
+
+        text.text += "\nBreath: ";
+        if (breatheUpgrades[breatheLevel].GetSalmonCost() != 0)
+        {
+            text.text += $"{breatheUpgrades[breatheLevel].GetSalmonCost()} salmon, ";
+        }
+        if (breatheUpgrades[breatheLevel].GetBabaroosaCost() != 0)
+        {
+            text.text += $"{breatheUpgrades[breatheLevel].GetBabaroosaCost()} babaroosa, ";
+        }
+
+        text.text += "\nHealth: ";
+        if (healthUpgrades[healthLevel].GetSalmonCost() != 0)
+        {
+            text.text += $"{healthUpgrades[healthLevel].GetSalmonCost()} salmon, ";
+        }
+        if (healthUpgrades[healthLevel].GetBabaroosaCost() != 0)
+        {
+            text.text += $"{healthUpgrades[healthLevel].GetBabaroosaCost()} babaroosa, ";
+        }
+
+        text.text += $"\n\nYou have: {Stats.GetFishInv(0)} salmon, {Stats.GetFishInv(1)} babaroosa";
 
         //sets interactivity of button based on money
-        if(Stats.GetNormalFishInv() >= swimUpgrades[speedLevel].GetSalmonCost() && Stats.GetBabarusaFishInv() >= swimUpgrades[speedLevel].GetBabaroosaCost())
+        if (Stats.GetFishInv(0) >= swimUpgrades[speedLevel].GetSalmonCost() && Stats.GetFishInv(1) >= swimUpgrades[speedLevel].GetBabaroosaCost())
         {
             speedUpgradeButton.interactable = true;
         }
@@ -109,7 +142,7 @@ You have: {Stats.GetNormalFishInv()} salmon, {Stats.GetBabarusaFishInv()} babaro
             speedUpgradeButton.interactable = false;
         }
 
-        if (Stats.GetNormalFishInv() >= breatheUpgrades[breatheLevel].GetSalmonCost() && Stats.GetBabarusaFishInv() >= breatheUpgrades[breatheLevel].GetBabaroosaCost())
+        if (Stats.GetFishInv(0) >= breatheUpgrades[breatheLevel].GetSalmonCost() && Stats.GetFishInv(1) >= breatheUpgrades[breatheLevel].GetBabaroosaCost())
         {
             breatheUpgradeButton.interactable = true;
         }
@@ -118,7 +151,7 @@ You have: {Stats.GetNormalFishInv()} salmon, {Stats.GetBabarusaFishInv()} babaro
             breatheUpgradeButton.interactable = false;
         }
 
-        if (Stats.GetNormalFishInv() >= healthUpgrades[healthLevel].GetSalmonCost() && Stats.GetBabarusaFishInv() >= healthUpgrades[healthLevel].GetBabaroosaCost())
+        if (Stats.GetFishInv(0) >= healthUpgrades[healthLevel].GetSalmonCost() && Stats.GetFishInv(1) >= healthUpgrades[healthLevel].GetBabaroosaCost())
         {
             healthUpgradeButton.interactable = true;
         }
@@ -132,8 +165,8 @@ You have: {Stats.GetNormalFishInv()} salmon, {Stats.GetBabarusaFishInv()} babaro
     public void SpeedUpgrade()
     {
         FindObjectOfType<GroundWaterManager>().waterMoveSpeed = swimUpgrades[speedLevel].GetResultOfUpgrade();
-        Stats.RemoveNormalFishInv(swimUpgrades[speedLevel].GetSalmonCost());
-        Stats.RemoveBabaroosaFishInv(swimUpgrades[speedLevel].GetBabaroosaCost());
+        Stats.RemoveFishInv(0, swimUpgrades[speedLevel].GetSalmonCost());
+        Stats.RemoveFishInv(1, swimUpgrades[speedLevel].GetBabaroosaCost());
         speedLevel++;
         MainMenu();
     }
@@ -141,8 +174,8 @@ You have: {Stats.GetNormalFishInv()} salmon, {Stats.GetBabarusaFishInv()} babaro
     public void BreatheUpgrade()
     {
         FindObjectOfType<Breathe>().SetBreatheTime(breatheUpgrades[breatheLevel].GetResultOfUpgrade());
-        Stats.RemoveNormalFishInv(breatheUpgrades[breatheLevel].GetSalmonCost());
-        Stats.RemoveBabaroosaFishInv(breatheUpgrades[breatheLevel].GetBabaroosaCost());
+        Stats.RemoveFishInv(0, breatheUpgrades[breatheLevel].GetSalmonCost());
+        Stats.RemoveFishInv(1, breatheUpgrades[breatheLevel].GetBabaroosaCost());
         breatheLevel++;
         MainMenu();
     }
@@ -150,8 +183,8 @@ You have: {Stats.GetNormalFishInv()} salmon, {Stats.GetBabarusaFishInv()} babaro
     public void HealthUpgrade()
     {
         FindObjectOfType<Health>().SetMaxHealth(healthUpgrades[healthLevel].GetResultOfUpgrade());
-        Stats.RemoveNormalFishInv(healthUpgrades[healthLevel].GetSalmonCost());
-        Stats.RemoveBabaroosaFishInv(healthUpgrades[healthLevel].GetBabaroosaCost());
+        Stats.RemoveFishInv(0, healthUpgrades[healthLevel].GetSalmonCost());
+        Stats.RemoveFishInv(1, healthUpgrades[healthLevel].GetBabaroosaCost());
         healthLevel++;
         MainMenu();
     }

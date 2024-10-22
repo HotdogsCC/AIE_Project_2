@@ -27,8 +27,8 @@ public class InventoryUI : MonoBehaviour
                 Debug.Log("opened inventory");
                 Pausing.Freeze();
                 ui.SetActive(true);
-                normalFishText.text = "normal fish: " + Stats.GetNormalFishInv().ToString();
-                babarusaFishText.text = "babrusa: " + Stats.GetBabarusaFishInv().ToString();
+                normalFishText.text = "normal fish: " + Stats.GetFishInv(0).ToString();
+                babarusaFishText.text = "babrusa: " + Stats.GetFishInv(1).ToString();
             }    
         }
     }
