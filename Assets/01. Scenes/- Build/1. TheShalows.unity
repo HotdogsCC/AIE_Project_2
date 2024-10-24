@@ -4841,13 +4841,12 @@ MonoBehaviour:
   text: {fileID: 1717857785}
   messages:
   - "I can\u2019t thank you enough for agreeing to go out fishing for me!"
-  - 'I know my cravings can get a little extreme, but I appreciate you going the
-    distance for me. '
-  - "You use the WASD keys to walk around and swim, don\u2019t forget SPACE BAR is
-    ascend and jump around."
-  - "If you want to put a little more effort in holding \u2018SHIFT\u2019 while walking
-    lets you move at a faster pace! "
-  - I know it's been your dream to find proof of what you saw all the years ago,
+  - I know I was somewhat pushy with what I want, but I appericiate you always going
+    the mile for me.
+  - Don't forget you can use the WASD to move and swim around the environment and
+    the SPACEBAR can be used to jump and acsend while swimmig.
+  - To really get going, you can hold down the SHIFT key to move faster!
+  - I know it's been your dream to find proof of whatever you saw all the years ago,
     I mean almost everyone called you crazy but I believe you.
   - Now here we are, you're gone for a few months while I take care of things here
     at home, while you're out there keeping a record of what you do and end up finding
@@ -11267,8 +11266,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955501315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -15, z: 97.5}
-  m_LocalScale: {x: 300, y: 100, z: 200}
+  m_LocalPosition: {x: -413, y: -15, z: 320}
+  m_LocalScale: {x: 1062.09, y: 100, z: 707.2929}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1009513525}
