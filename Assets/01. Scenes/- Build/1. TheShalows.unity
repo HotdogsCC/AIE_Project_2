@@ -1699,6 +1699,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1681913818}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &131200042
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &138225579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2397,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
     type: 3}
   m_PrefabInstance: {fileID: 1592297567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &215069809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 767123832209434002, guid: 32052e66af0c27f468ff28ce0a41dd9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 539958464}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &217396997
 GameObject:
@@ -5932,6 +5976,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6623862145207629819, guid: 32052e66af0c27f468ff28ce0a41dd9c,
+        type: 3}
+      propertyPath: rClickToReel
+      value: 
+      objectReference: {fileID: 215069809}
     - target: {fileID: 6623862146045084818, guid: 32052e66af0c27f468ff28ce0a41dd9c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -14366,7 +14415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeOverride: 0
-  _depthTex: {fileID: 1894821485}
+  _depthTex: {fileID: 131200042}
   bakedDepthTex: {fileID: 0}
   _waves:
   - amplitude: 0.4072035
@@ -20841,44 +20890,6 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
---- !u!84 &1894821485
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &1895661972
 GameObject:
   m_ObjectHideFlags: 0

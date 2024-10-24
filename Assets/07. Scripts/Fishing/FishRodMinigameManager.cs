@@ -23,6 +23,7 @@ public class FishRodMinigameManager : MonoBehaviour
     [SerializeField] private Image highlighter;
     [SerializeField] private GameObject sfx;
     [SerializeField] private Image progressBar;
+    [SerializeField] private GameObject rClickToReel;
 
     private float catchProgressPercentage;
     private bool isGameRunning = false;
@@ -67,10 +68,21 @@ public class FishRodMinigameManager : MonoBehaviour
 
         if (catchProgressPercentage >= 100)
         {
-            FindObjectOfType<TextDisplay>().DisplayText("Fish Caught", 3f);
-            Stats.FishCaught(fishy.GetFishIndex());
-            EndMinigame();
+            catchProgressPercentage = 100;
+            rClickToReel.SetActive(true);
+            if(Input.GetMouseButtonDown(1))
+            {
+                FindObjectOfType<TextDisplay>().DisplayText("Fish Caught", 3f);
+                Stats.FishCaught(fishy.GetFishIndex());
+                EndMinigame();
+            }
+            
         }
+        else
+        {
+            rClickToReel.SetActive(false);
+        }
+
         if (catchProgressPercentage <= 0)
         {
             FindObjectOfType<TextDisplay>().DisplayText("Fish Lost", 3f);
