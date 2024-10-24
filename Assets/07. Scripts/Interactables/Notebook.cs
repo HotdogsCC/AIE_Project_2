@@ -27,7 +27,13 @@ public class Notebook : Interactable
     {
         text.text = 
             $"Normal fish caught: {Stats.GetFishCaught(0)}\n" +
-            $"Babarusa caught : {Stats.GetFishCaught(1)}";
+            $"Babarusa caught: {Stats.GetFishCaught(1)}\n" +
+            $"Face fish caught: {Stats.GetFishCaught(2)}\n" +
+            $"Coral fish caught: {Stats.GetFishCaught(3)}\n" +
+            $"Box fish caught: {Stats.GetFishCaught(4)}\n" +
+            $"Lampery fish caught: {Stats.GetFishCaught(5)}\n" +
+            $"Eyeless fish caught: {Stats.GetFishCaught(6)}\n" +
+            $"Lure jaw fish caught: {Stats.GetFishCaught(7)}";
 
         if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape))
         {
