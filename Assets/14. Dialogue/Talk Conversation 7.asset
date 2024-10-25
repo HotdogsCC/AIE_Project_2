@@ -13,11 +13,6 @@ MonoBehaviour:
   m_Name: Talk Conversation 7
   m_EditorClassIdentifier: 
   statements:
-  - I know its only been a few days since you left But I can't help counting down
-    the days.
-  - Is 6 months too long? I guess I kind of understand when they say
-  - you won't know what you have until you lose it. Well I havn't lost you yet but
-    still.
-  - By the way if you happen to feel like something is watching you
-  - or that you rea being followed while diving, I would suggest maybe calling it
-  - and return to your ship don't want to be too paranoid right?
+  - I know it's not been long since y'left, but I still miss you.
+  - Just remember your ship safety, and don't fist-fight the fish.
+  - We are not havin' a repeat of last time. I am not stitchin' your legs back together.

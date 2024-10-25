@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Talk Conversation 6
   m_EditorClassIdentifier: 
   statements:
-  - Did you get time to think about our coversation before? ....
-  - 'I''m guessing you don''t remember... of course... '
-  - its nothing just keep doing what your doing, Its fine Im not mad or anything 
-    just keep sending over what you end up catching to me
-  - I will keep your trophies ready to be displayed for when you  get back.
+  - Hey, d'you remember our conversation before?
+  - -I forgot as well. Was it something something fishing?
+  - Ah well, it'll pop back into my head soon 'nuff.

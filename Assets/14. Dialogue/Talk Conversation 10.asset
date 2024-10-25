@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Talk Conversation 10
   m_EditorClassIdentifier: 
   statements:
-  - I just checked the weather looks like its gonna be a nice day out
-  - Hmm? why won't I join you out in sea? well you know me, im usually busy all the
-    time
-  - and who is gonna look after the dogs? besides Im not a very good at fishing you
-    know that
+  - Optimal fishing weather today!
+  - Hmm? Why don't I tag along? Y'know me hon.
+  - I'm a terrible swimmer!

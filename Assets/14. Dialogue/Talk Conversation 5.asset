@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: Talk Conversation 5
   m_EditorClassIdentifier: 
   statements:
-  - Miss me already? you know sometimes I think that you going on this gran journey
-    isn't such a good idea...
-  - I mean your leaving behind everytyhing for a few months to purse soemthing that
-    you don't know actually exists
-  - Look im just saying, keep your expectations in check and that I will be here
-    waiting for you okay?
-  - bye.
+  - Hey, y'haven't forgotten about me yet, no?
+  - I'm kiddin'! Don't worry about me!
+  - Just don't forget to keep in contact, alright?
+  - Gotta make sure I don't have t'write you a eulogy.

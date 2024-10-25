@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: Talk Conversation 1
   m_EditorClassIdentifier: 
   statements:
-  - Hm? how was my day?
-  - Well first I got up and brushed my hair, then I brushed my teeth
-  - Got ready for work, Hated it, the type of people who come in the and think they
-    just own the place.
-  - How about you? hows chasing the big one going?
-  - No sight of it huh. Don't worry im sure that if you keep looking it will eventually
-    turn up!
+  - Hm? Hows my day goin'?
+  - Honestly? Tiring.
+  - Someone at the docks is hollerin' about sea monsters again.
+  - There's nothin' fishy about our town. The nerve.
