@@ -36,4 +36,17 @@ public class TutorialPopUp : MonoBehaviour
         }
     }
 
+    public bool HasSpearTutHappened()
+    {
+        if(spearTut)
+        {
+            return true;
+        }
+        else
+        {
+            spearTut = true;
+            return false;
+        }
+    }
+
 }

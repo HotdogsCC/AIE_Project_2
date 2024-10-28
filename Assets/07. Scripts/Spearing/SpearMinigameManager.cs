@@ -8,6 +8,7 @@ public class SpearMinigameManager : MonoBehaviour
 {
     [SerializeField] private GameObject spearMinigame;
     [SerializeField] private Image image;
+    [SerializeField] private GameObject spearTutorialPopUp;
     private TutorialPopUp tutorial;
 
     private Transform fish;
@@ -18,17 +19,51 @@ public class SpearMinigameManager : MonoBehaviour
     }
     public void StartMinigame(Transform inFish, Transform spearTip)
     {
+        if(!tutorial.HasSpearTutHappened())
+        {
+            spearTutorialPopUp.SetActive(true);
+            fish = inFish;
+            fish.SetParent(spearTip);
+            fish.localPosition = Vector3.zero;
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            fish.GetComponent<FishMovement>().enabled = false;
+            Pausing.Freeze();
+        }
+        else
+        {
+            ActuallyStart(inFish, spearTip);
+        }
+    }
+    public void ActuallyStart(Transform inFish, Transform spearTip)
+    {
+        spearTutorialPopUp.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
         fish = inFish;
         Sprite sprite = fish.GetComponent<FishMovement>().image;
-        if(sprite != null)
+        if (sprite != null)
         {
             image.sprite = sprite;
         }
         fish.GetComponent<FishMovement>().enabled = false;
         fish.SetParent(spearTip);
         fish.localPosition = Vector3.zero;
+        spearMinigame.SetActive(true);
+        tutorial.SpearingTut();
+        Pausing.Freeze();
+    }
+    public void ActuallyStart()
+    {
+        spearTutorialPopUp.SetActive(false);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
+        Sprite sprite = fish.GetComponent<FishMovement>().image;
+        if (sprite != null)
+        {
+            image.sprite = sprite;
+        }
+        fish.GetComponent<FishMovement>().enabled = false;
         spearMinigame.SetActive(true);
         tutorial.SpearingTut();
         Pausing.Freeze();
