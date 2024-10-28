@@ -9917,7 +9917,7 @@ PrefabInstance:
       objectReference: {fileID: 503785195}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: swimUpgrades.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: conversations.Array.size
@@ -9929,11 +9929,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: healthUpgrades.Array.size
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: breatheUpgrades.Array.size
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: swimUpgrades.Array.data[0]
@@ -9944,6 +9944,21 @@ PrefabInstance:
       propertyPath: swimUpgrades.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 73c417fbb9799324182dfd07e88fad55,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: swimUpgrades.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 659d084877c923e4683f2625fb96de11,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: swimUpgrades.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 367eea2186965d9489f66108e7a8f506,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: swimUpgrades.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b54ef7a3706e624fbcf45974413a2d2,
         type: 2}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: conversations.Array.data[1]
@@ -10017,6 +10032,46 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
         type: 2}
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: c38d906f3889af34dacaa2568ea7be21,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 99d7209587d0fde409a25ea5ba85a628,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: da7101c7f4f67e241b04bb7b39621559,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: e08dececa975b9e48b8e1eef4926c668,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0be18271f8d120f4a84e9ff7e4625bf4,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 723334d69da12f448adf23e8f58032ca,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 25d82f9a12618d342af4ddc662a069f9,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ffb4ea154d7d9746bb3a113c738d901,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: breatheUpgrades.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: cbe63f922e5557741a9a274afdf1bc35,
@@ -10029,7 +10084,502 @@ PrefabInstance:
     - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: breatheUpgrades.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 21fbf81ccce321f4492789450692adc8,
+      objectReference: {fileID: 11400000, guid: 59e7a55ee6230ed40b79026a2ef9b133,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: breatheUpgrades.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 82b7e493ac2952f4f8988ff448916ea1,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: breatheUpgrades.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: a75307cb12170594097012e376c2d77a,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: breatheUpgrades.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: e5b103dbd34b21c409f41611f4c22398,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: breatheUpgrades.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8295befe00f8a494baa6852f287f08b5,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: breatheUpgrades.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: ca93d3e7afab88f42a3bd645832f28a9,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: breatheUpgrades.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 88cee3d09cf077f46b5d0e41ccc26f05,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: breatheUpgrades.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9dc220c02e6d6d146ba82bc1ab2b57c8,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[18]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[19]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[20]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[21]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[22]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[23]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[24]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[25]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[26]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[27]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[28]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[29]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[30]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[31]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[32]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[33]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[34]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[35]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[36]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[37]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[38]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[39]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[40]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[41]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[42]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[43]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[44]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[45]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[46]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[47]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[48]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[49]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[50]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[51]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[52]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[53]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[54]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[55]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[56]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[57]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[58]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[59]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[60]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[61]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[62]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[63]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[64]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[65]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[66]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[67]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[68]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[69]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[70]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[71]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[72]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[73]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[74]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[75]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[76]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[77]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[78]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[79]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[80]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[81]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[82]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[83]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[84]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[85]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[86]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[87]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[88]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[89]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[90]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[91]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[92]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[93]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[94]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[95]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[96]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[97]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[98]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[99]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[100]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
+        type: 2}
+    - target: {fileID: 824082495, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
+      propertyPath: healthUpgrades.Array.data[101]
+      value: 
+      objectReference: {fileID: 11400000, guid: 867d9321ae45f3d4fbe3eeee96a6c9bf,
         type: 2}
     - target: {fileID: 938982589, guid: 0bc04b0c06514d443b549e26e1667d74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
