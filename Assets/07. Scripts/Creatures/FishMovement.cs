@@ -22,8 +22,13 @@ public class FishMovement : MonoBehaviour
     [SerializeField] FishName fishName = FishName.normal;
     [SerializeField] BehaviourMode behaviour = BehaviourMode.neutral;
     [SerializeField] float reactionRadius = 2f;
-    [SerializeField] private FishHome home;
     [SerializeField] public Sprite image;
+
+    [Header("Coral Atrributes")]
+    [SerializeField] private FishHome home;
+
+    [Header("Eyeless Atrributes")]
+    [SerializeField] private float bleedingReactionRadius;
 
     [Header("Swiming Attributes")]
     [SerializeField] float minSwimDistance = 5f;
@@ -33,7 +38,6 @@ public class FishMovement : MonoBehaviour
     [SerializeField] float swimDeceleration = 1f;
     [SerializeField] float maxHeight = -2f;
     
-
     [Header("Fishing Minigame Attributes")]
     [SerializeField] float fishIconMoveSpeed = 25f;
     [SerializeField] int fishIconChanceOfChangingDirection = 3;
