@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e3a230c40688064cb008695adb0dbe1, type: 3}
-  m_Name: Talk Conversation 1
+  m_Script: {fileID: 11500000, guid: 3263fe3d3e0d9654aad757b313614eea, type: 3}
+  m_Name: Breathe-3
   m_EditorClassIdentifier: 
-  statements:
-  - Hm? Hows my day going?
-  - Honestly? Tiring.
-  - Someone at the docks is hollering' about sea monsters again.
-  - There's nothing' fishy about our town. The nerve.
+  salmon: 25
+  babaroosa: 15
+  value: 60
