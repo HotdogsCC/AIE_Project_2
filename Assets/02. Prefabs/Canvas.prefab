@@ -4256,6 +4256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 3594841054278922629}
+  blood: {fileID: 7903309107068381270, guid: 85ec44a164d32cc49b92f590a541b100, type: 3}
   health: 100
 --- !u!1 &6700330070055938522
 GameObject:

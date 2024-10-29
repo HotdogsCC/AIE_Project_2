@@ -260,7 +260,7 @@ MonoBehaviour:
   reactionRadius: 1
   image: {fileID: 0}
   home: {fileID: 0}
-  bleedingReactionRadius: 5
+  bleedingReactionRadius: 50
   minSwimDistance: 1
   maxSwimDistance: 20
   minSwimSpeed: 0.5

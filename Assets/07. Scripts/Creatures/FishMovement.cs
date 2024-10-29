@@ -214,7 +214,14 @@ public class FishMovement : MonoBehaviour
                 break;
 
             case "Player":
-                if(behaviour == BehaviourMode.aggresive)
+                if(fishName == FishName.lampery)
+                {
+                    Debug.Log("player bleeding");
+                    FindObjectOfType<Health>().StartBleeding();
+                    FindObjectOfType<FishBiteScare>().Scare();
+                    Destroy(gameObject);
+                }
+                else if(behaviour == BehaviourMode.aggresive)
                 {
                     FindObjectOfType<Health>().ChangeHealth(-34);
                     FindObjectOfType<FishBiteScare>().Scare();
@@ -308,5 +315,20 @@ public class FishMovement : MonoBehaviour
     public int GetFishIndex()
     {
         return (int)fishName;
+    }
+
+    public void ChangeEyelessReaction()
+    {
+        if(fishName == FishName.eyeless)
+        {
+            StartCoroutine(ResetReactionRadius(reactionRadius));
+            reactionRadius = bleedingReactionRadius;
+        }
+    }
+
+    IEnumerator ResetReactionRadius(float input)
+    {
+        yield return new WaitForSeconds(5f);
+        reactionRadius = input;
     }
 }
