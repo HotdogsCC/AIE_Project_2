@@ -168,7 +168,7 @@ public class FishMovement : MonoBehaviour
     {
         swimSpeed = speed;
 
-        targetPos = position;
+        targetPos = new Vector3(position.x, Mathf.Clamp(position.y, -Mathf.Infinity, maxHeight), position.z);
 
         transform.LookAt(player);
     }
