@@ -108,17 +108,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13581f5c16713f24eb4e1bfb869ae5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishName: 0
+  fishName: 4
   behaviour: 0
   reactionRadius: 2
-  home: {fileID: 0}
   image: {fileID: 0}
+  home: {fileID: 0}
+  bleedingReactionRadius: 0
   minSwimDistance: 2
   maxSwimDistance: 8
   minSwimSpeed: 0.5
   maxSwimSpeed: 4
   swimDeceleration: 2
-  maxHeight: 2
+  maxHeight: 0.145
   fishIconMoveSpeed: 25
   fishIconChanceOfChangingDirection: 3
 --- !u!65 &7484826329237438029
