@@ -955,7 +955,7 @@ GameObject:
   - component: {fileID: 86353612}
   - component: {fileID: 86353611}
   m_Layer: 0
-  m_Name: MusicPlayer
+  m_Name: MusicPlayer_SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2001,7 +2001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183113293}
   m_Layer: 11
-  m_Name: Creatures
+  m_Name: Creatures_GRP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2023,7 +2023,7 @@ Transform:
   - {fileID: 721785625}
   - {fileID: 1280885687}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &184216637
 PrefabInstance:
@@ -5906,7 +5906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485919712}
   m_Layer: 0
-  m_Name: Point 1 (2)
+  m_Name: NavMesh_Point3_EMT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6647,7 +6647,7 @@ Transform:
   - {fileID: 1705663753}
   - {fileID: 1791536597}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &524368622 stripped
 GameObject:
@@ -7477,7 +7477,7 @@ PrefabInstance:
     - target: {fileID: 2410276965912011695, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
       propertyPath: m_Name
-      value: Player Bundle
+      value: PlayerBundle_GRP
       objectReference: {fileID: 0}
     - target: {fileID: 6724908806142429682, guid: a0a6a6d008cde664b9a422943f132061,
         type: 3}
@@ -8568,7 +8568,7 @@ Transform:
   - {fileID: 1729600846}
   - {fileID: 1807188837}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &711437347
 PrefabInstance:
@@ -14263,7 +14263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1259188140}
   m_Layer: 0
-  m_Name: Point 1 (1)
+  m_Name: NavMesh_Point2_EMT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14788,6 +14788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabMonster
       objectReference: {fileID: 0}
+    - target: {fileID: 5792744366562842766, guid: 4e7afdf31c20ebf419ea38bf1d358719,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5794526363542072584, guid: 4e7afdf31c20ebf419ea38bf1d358719,
         type: 3}
       propertyPath: m_RootOrder
@@ -15010,7 +15015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288062859}
   m_Layer: 0
-  m_Name: Point 1
+  m_Name: NavMesh_Point1_EMT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15522,7 +15527,7 @@ PrefabInstance:
     - target: {fileID: 6623862146045084822, guid: 32052e66af0c27f468ff28ce0a41dd9c,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Canvas_UI
       objectReference: {fileID: 0}
     - target: {fileID: 6623862146045084822, guid: 32052e66af0c27f468ff28ce0a41dd9c,
         type: 3}
@@ -18252,7 +18257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1549904059}
   m_Layer: 0
-  m_Name: Point 1 (3)
+  m_Name: NavMesh_Point4_EMT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19895,7 +19900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729600846}
   m_Layer: 0
-  m_Name: Point 1 (4)
+  m_Name: NavMesh_Point5_EMT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19930,7 +19935,7 @@ GameObject:
   - component: {fileID: 1757640263}
   - component: {fileID: 1757640262}
   m_Layer: 0
-  m_Name: OcclusionArea
+  m_Name: OcclusionArea_VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20023,7 +20028,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1760746068
 GameObject:
@@ -20790,7 +20795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1807188837}
   m_Layer: 0
-  m_Name: Point 1 (5)
+  m_Name: NavMesh_Point6_EMT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
