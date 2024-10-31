@@ -17,7 +17,7 @@ MonoBehaviour:
   faceFish: 0
   coralFish: 0
   boxFish: 0
-  lampery: 0
-  eyeless: 0
-  lureJaw: 5
-  value: 60
+  lampery: 5
+  eyeless: 5
+  lureJaw: 1
+  value: 160

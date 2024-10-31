@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3263fe3d3e0d9654aad757b313614eea, type: 3}
   m_Name: Health-5
   m_EditorClassIdentifier: 
-  salmon: 20
+  salmon: 0
   babaroosa: 0
   faceFish: 0
-  coralFish: 15
+  coralFish: 5
   boxFish: 0
   lampery: 0
-  eyeless: 0
+  eyeless: 5
   lureJaw: 0
-  value: 10
+  value: 210

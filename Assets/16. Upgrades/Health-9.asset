@@ -18,6 +18,6 @@ MonoBehaviour:
   coralFish: 0
   boxFish: 0
   lampery: 5
-  eyeless: 10
+  eyeless: 0
   lureJaw: 1
-  value: 10
+  value: 290

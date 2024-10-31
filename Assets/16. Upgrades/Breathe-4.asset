@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Breathe-4
   m_EditorClassIdentifier: 
   salmon: 0
-  babaroosa: 20
+  babaroosa: 10
   faceFish: 0
   coralFish: 5
   boxFish: 0
   lampery: 0
   eyeless: 0
   lureJaw: 0
-  value: 60
+  value: 100

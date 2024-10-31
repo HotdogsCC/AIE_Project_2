@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salmon: 0
   babaroosa: 0
-  faceFish: 0
+  faceFish: 10
   coralFish: 0
   boxFish: 0
   lampery: 0
-  eyeless: 15
-  lureJaw: 1
-  value: 60
+  eyeless: 5
+  lureJaw: 0
+  value: 150

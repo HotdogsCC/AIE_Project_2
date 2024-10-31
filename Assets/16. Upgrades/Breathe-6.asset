@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3263fe3d3e0d9654aad757b313614eea, type: 3}
   m_Name: Breathe-6
   m_EditorClassIdentifier: 
-  salmon: 0
+  salmon: 10
   babaroosa: 0
   faceFish: 0
-  coralFish: 15
+  coralFish: 10
   boxFish: 0
   lampery: 5
   eyeless: 0
   lureJaw: 0
-  value: 60
+  value: 120

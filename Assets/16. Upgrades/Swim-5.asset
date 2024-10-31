@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Swim-5
   m_EditorClassIdentifier: 
   salmon: 0
-  babaroosa: 25
+  babaroosa: 0
   faceFish: 0
   coralFish: 0
   boxFish: 0
-  lampery: 5
-  eyeless: 5
-  lureJaw: 1
-  value: 5
+  lampery: 0
+  eyeless: 0
+  lureJaw: 5
+  value: 16

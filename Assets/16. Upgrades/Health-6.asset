@@ -15,9 +15,9 @@ MonoBehaviour:
   salmon: 0
   babaroosa: 0
   faceFish: 0
-  coralFish: 20
+  coralFish: 0
   boxFish: 0
   lampery: 5
-  eyeless: 0
+  eyeless: 10
   lureJaw: 0
-  value: 10
+  value: 230

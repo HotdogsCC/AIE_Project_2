@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Health-8
   m_EditorClassIdentifier: 
   salmon: 0
-  babaroosa: 10
+  babaroosa: 0
   faceFish: 0
-  coralFish: 20
+  coralFish: 0
   boxFish: 0
-  lampery: 5
-  eyeless: 10
-  lureJaw: 0
-  value: 10
+  lampery: 0
+  eyeless: 0
+  lureJaw: 1
+  value: 270
