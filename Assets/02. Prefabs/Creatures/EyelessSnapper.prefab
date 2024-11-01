@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 4030416745836849219}
   - component: {fileID: 4030416745836849218}
   m_Layer: 11
-  m_Name: Eyeless FIsh
+  m_Name: EyelessSnapper
   m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 4030416745836849221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -53.6, y: 33, z: 50.1}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 5.6780996, y: 5.6780996, z: 5.6780996}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 785411947649263805}
@@ -280,8 +280,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.38, z: 1.2340863}
-  m_Center: {x: 0, y: 0, z: -0.21204317}
+  m_Size: {x: 0.5460497, y: 0.38, z: 1.3833257}
+  m_Center: {x: 0.021149116, y: 0, z: -0.13742352}
 --- !u!54 &4030416745836849218
 Rigidbody:
   m_ObjectHideFlags: 0
