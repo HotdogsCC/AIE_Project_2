@@ -35349,7 +35349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1288849648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35363,26 +35363,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeOverride: 0
-  _depthTex: {fileID: 0}
+  _depthTex: {fileID: 1724059802}
   bakedDepthTex: {fileID: 0}
   _waves:
-  - amplitude: 0.20360175
-    direction: -161.6966
-    wavelength: 8.748137
+  - amplitude: 0.5599048
+    direction: 124.303406
+    wavelength: 14.645759
     origin:
       x: 0
       y: 0
     onmiDir: 0
-  - amplitude: 0.31984514
-    direction: -155.68127
-    wavelength: 14.095119
+  - amplitude: 0.7036593
+    direction: 130.31873
+    wavelength: 18.877956
     origin:
       x: 0
       y: 0
     onmiDir: 0
-  - amplitude: 0.5250449
-    direction: -252.20753
-    wavelength: 15.087908
+  - amplitude: 1.0313382
+    direction: 33.792465
+    wavelength: 18.042522
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 1.0077826
+    direction: 124.96355
+    wavelength: 27.696669
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 1.1002696
+    direction: 172.68698
+    wavelength: 33.560284
+    origin:
+      x: 0
+      y: 0
+    onmiDir: 0
+  - amplitude: 1.5058694
+    direction: 96.27522
+    wavelength: 53.4719
     origin:
       x: 0
       y: 0
@@ -45568,6 +45589,44 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1854966455}
   m_Enabled: 1
+--- !u!84 &1724059802
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1725473667
 GameObject:
   m_ObjectHideFlags: 0
