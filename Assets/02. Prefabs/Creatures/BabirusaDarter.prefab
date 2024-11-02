@@ -53,15 +53,17 @@ MonoBehaviour:
   fishName: 1
   behaviour: 1
   reactionRadius: 4
+  image: {fileID: 0}
   home: {fileID: 0}
+  bleedingReactionRadius: 0
   minSwimDistance: 1
   maxSwimDistance: 12
   minSwimSpeed: 1
   maxSwimSpeed: 5
   swimDeceleration: 1
   maxHeight: 20
-  fishIconMoveSpeed: 25
-  fishIconChanceOfChangingDirection: 3
+  fishIconMoveSpeed: 30
+  fishIconChanceOfChangingDirection: 5
 --- !u!33 &332155534010972356
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1680,6 +1682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8954919c5fd071449a6766a9db910a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  radius: 20
 --- !u!1 &4489786527133049867
 GameObject:
   m_ObjectHideFlags: 0

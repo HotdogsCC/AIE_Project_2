@@ -190,8 +190,8 @@ MonoBehaviour:
   maxSwimSpeed: 3
   swimDeceleration: 1
   maxHeight: 33
-  fishIconMoveSpeed: 25
-  fishIconChanceOfChangingDirection: 3
+  fishIconMoveSpeed: 50
+  fishIconChanceOfChangingDirection: 10
 --- !u!33 &5972283657734018896
 MeshFilter:
   m_ObjectHideFlags: 0

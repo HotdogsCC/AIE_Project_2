@@ -267,8 +267,8 @@ MonoBehaviour:
   maxSwimSpeed: 8
   swimDeceleration: 5
   maxHeight: 33
-  fishIconMoveSpeed: 25
-  fishIconChanceOfChangingDirection: 3
+  fishIconMoveSpeed: 60
+  fishIconChanceOfChangingDirection: 8
 --- !u!65 &4030416745836849219
 BoxCollider:
   m_ObjectHideFlags: 0
