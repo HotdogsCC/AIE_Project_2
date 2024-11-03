@@ -1,8 +1,11 @@
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class Breathe : MonoBehaviour
 {
@@ -11,6 +14,9 @@ public class Breathe : MonoBehaviour
     [SerializeField] private float breatheRecoverySpeed = 15f;
     [SerializeField] private float outOfBreathDamage = 20f;
     [SerializeField] private GameObject chokingSFX;
+    [SerializeField] private Volume ppProfile;
+    private Vignette vig;
+
     private bool playSFX = true;
 
     private float _breathTime = 30f;
@@ -22,6 +28,8 @@ public class Breathe : MonoBehaviour
         head = FindObjectOfType<Head>();
         health = FindObjectOfType<Health>();
         _breathTime = breatheTime;
+        ppProfile.profile.TryGet<Vignette>(out vig);
+        vig.intensity.value = 0f;
     }
 
     private void Update()
@@ -58,6 +66,7 @@ public class Breathe : MonoBehaviour
     private void SetBar()
     {
         breathSlider.fillAmount = _breathTime / breatheTime;
+        vig.intensity.value = Mathf.Clamp((-9f / 100f) * (_breathTime) + 1, 0.2f, 1f);
     }
 
     public void SetBreatheTime(float input)
