@@ -235,7 +235,7 @@ public class DialogueRadio : MonoBehaviour
 
     public void SpeedUpgrade()
     {
-        FindObjectOfType<GroundWaterManager>().waterMoveSpeed = swimUpgrades[speedLevel].GetResultOfUpgrade();
+        FindObjectOfType<GroundWaterManager>().waterSprintSpeed = swimUpgrades[speedLevel].GetResultOfUpgrade();
         Stats.RemoveFishInv(0, swimUpgrades[speedLevel].GetCost(0));
         Stats.RemoveFishInv(1, swimUpgrades[speedLevel].GetCost(1));
         Stats.RemoveFishInv(1, swimUpgrades[speedLevel].GetCost(2));
