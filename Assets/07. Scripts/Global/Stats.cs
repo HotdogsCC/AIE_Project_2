@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Stats : MonoBehaviour
 {
     private static int[] fishCaught = { 0, 0, 0, 0, 0, 0, 0, 0 };
     private static int[] fishInv = { 0, 0, 0, 0, 0, 0, 0, 0 };
+    public static float breatheTime = 60;
+    public static float health = 10;
+    public static float speed = 8;
 
     public static int GetFishCaught(int index)
     {
@@ -64,4 +68,20 @@ public class Stats : MonoBehaviour
                 break;
         }
     }
+
+    public static void SetSpeed(float _speed)
+    {
+        speed = _speed;
+    }
+
+    public static void SetBreath(float _breath)
+    {
+        breatheTime = _breath;
+    }
+
+    public static void SetHealth(float _health)
+    {
+        health = _health;
+    }
+
 }

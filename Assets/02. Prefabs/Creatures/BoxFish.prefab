@@ -114,8 +114,8 @@ MonoBehaviour:
   image: {fileID: 0}
   home: {fileID: 0}
   bleedingReactionRadius: 0
-  minSwimDistance: 2
-  maxSwimDistance: 8
+  minSwimDistance: 1
+  maxSwimDistance: 4
   minSwimSpeed: 0.5
   maxSwimSpeed: 4
   swimDeceleration: 2
@@ -149,7 +149,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &9126271737426473824
 GameObject:
@@ -351,22 +351,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 19dd751317f8da346bd74955afbfd2c1,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19dd751317f8da346bd74955afbfd2c1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19dd751317f8da346bd74955afbfd2c1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19dd751317f8da346bd74955afbfd2c1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19dd751317f8da346bd74955afbfd2c1,
         type: 3}
@@ -376,7 +376,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 19dd751317f8da346bd74955afbfd2c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 19dd751317f8da346bd74955afbfd2c1,
         type: 3}
