@@ -25,6 +25,14 @@ public class Notebook : Interactable
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Backslash))
+        {
+            for(int i = 0; i < 8; i++)
+            {
+                Stats.FishCaught(i);
+            }
+        }
+
         text.text = 
             $"Normal fish caught: {Stats.GetFishCaught(0)}\n" +
             $"Babarusa caught: {Stats.GetFishCaught(1)}\n" +

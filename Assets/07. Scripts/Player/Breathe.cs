@@ -34,6 +34,11 @@ public class Breathe : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Minus))
+        {
+            _breathTime = breatheTime;
+        }
+
         if (head.inWater)
         {
             _breathTime -= Time.deltaTime;

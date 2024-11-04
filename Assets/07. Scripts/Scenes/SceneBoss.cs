@@ -31,4 +31,9 @@ public class SceneBoss : MonoBehaviour
             yield return null;
         }
     }
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }

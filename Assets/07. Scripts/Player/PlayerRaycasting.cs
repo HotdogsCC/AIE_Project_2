@@ -33,6 +33,7 @@ public class PlayerRaycasting : MonoBehaviour
                 if(Input.GetKeyDown(KeyCode.E))
                 {
                     interactable.Interact();
+                    interactPopUp.SetActive(false);
                 }
             }
         }

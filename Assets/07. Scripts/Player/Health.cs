@@ -37,6 +37,10 @@ public class Health : MonoBehaviour
             health -= 5 * Time.deltaTime;
             SetHealthBar();
         }
+        if(Input.GetKeyDown(KeyCode.Equals))
+        {
+            health = maxHealth;
+        }
     }
 
     public void SetMaxHealth(float input)

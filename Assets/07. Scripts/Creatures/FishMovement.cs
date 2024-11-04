@@ -147,7 +147,9 @@ public class FishMovement : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Vector3.Distance(transform.position, targetPos), 65536))
             {
-                CalculateNewDirection();
+                //Creates the target position from the target direction
+                targetPos = -targetPos.normalized;
+                transform.LookAt(targetPos);
             }
         }
     }
