@@ -6827,17 +6827,17 @@ PrefabInstance:
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 469.2302
+      value: 461.86
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47.67
+      value: 52.26
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -177.17467
+      value: -186.56
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
@@ -12072,6 +12072,8 @@ Transform:
   - {fileID: 890193405}
   - {fileID: 154840794}
   - {fileID: 948586183}
+  - {fileID: 1270478200}
+  - {fileID: 1919560651}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17225,25 +17227,20 @@ MonoBehaviour:
   text: {fileID: 1717857785}
   messages:
   - "I can\u2019t thank you enough for agreeing to go out fishing for me!"
-  - I know I was somewhat pushy with what I want, but I appericiate you always going
-    the mile for me.
-  - Don't forget you can use the WASD to move and swim around the environment and
-    the SPACEBAR can be used to jump and acsend while swimmig.
-  - To really get going, you can hold down the SHIFT key to move faster!
-  - I know it's been your dream to find proof of whatever you saw all the years ago,
-    I mean almost everyone called you crazy but I believe you.
-  - Now here we are, you're gone for a few months while I take care of things here
-    at home, while you're out there keeping a record of what you do and end up finding
-    yeah?
-  - 'Oh I almost forgot, by pressing the left mouse button you can cast your fishing
+  - Apologies for bein' a wee bit pushy, but I appreciate you always going the mile
+    for me.
+  - Remember to swim safely with WASD, and get some air by holding the space key!
+  - -and if you need to get goin', you can paddle faster with shift.
+  - I know, I know. I'm a little overbearing. Just worried that whatever you spot
+    out there is well..
+  - A little too dangerous, y'know?
+  - 'Oh I almost forgot! By pressing the left mouse button you can cast your fishing
     rod to try and fish up something, or dive on in and use the same input to attempt
     to spear fish the fish your looking for. '
-  - One last thing, I would love it if you could send some of the fish you caught
-    back home for me
-  - Just let me know you're doing so okay.
-  - "You can do this by using the radio and selecting \u2018Upgrade\u2019 in which
-    I will use what I can to help increase your capabilities beyond your imagination"
-  - This should help you explore further and for longer.
+  - Speakin' of fish, remember to send me some! I'd love a snack or two.
+  - "You can do this by using the radio and selecting \u2018Upgrade\u2019. In return,
+    I'll give you a gift or two."
+  - Anyway, you'd best be off. Stay safe!
 --- !u!1001 &436580780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17348,17 +17345,17 @@ PrefabInstance:
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 458.6047
+      value: 486.55
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 48.33
+      value: 52.72
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -170.7917
+      value: -157.32
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
@@ -27854,7 +27851,7 @@ PrefabInstance:
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47.43
+      value: 52.5
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
@@ -35465,12 +35462,12 @@ PrefabInstance:
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47.449997
+      value: 52.21
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -173.18896
+      value: -160.76
       objectReference: {fileID: 0}
     - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
         type: 3}
@@ -50153,6 +50150,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4149751193801856149, guid: 6cccdeb837ffa5042aab4bec34b934a8,
     type: 3}
   m_PrefabInstance: {fileID: 1270453483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1270478199
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 301950250}
+    m_Modifications:
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 441.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 52.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -177.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252475, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_Name
+      value: SimpleSalmon (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 411a358402e484940958286304e10e79, type: 3}
+--- !u!4 &1270478200 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+    type: 3}
+  m_PrefabInstance: {fileID: 1270478199}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1283061822
 PrefabInstance:
@@ -77234,6 +77306,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2772682c459ebf43983ed39688a4ebf, type: 3}
+--- !u!1001 &1919560650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 301950250}
+    m_Modifications:
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 454.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 52.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -151.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397961489959252475, guid: 411a358402e484940958286304e10e79,
+        type: 3}
+      propertyPath: m_Name
+      value: SimpleSalmon (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 411a358402e484940958286304e10e79, type: 3}
+--- !u!4 &1919560651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4397961489959252352, guid: 411a358402e484940958286304e10e79,
+    type: 3}
+  m_PrefabInstance: {fileID: 1919560650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1920171917
 GameObject:
   m_ObjectHideFlags: 0
