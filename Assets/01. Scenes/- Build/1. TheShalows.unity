@@ -38281,7 +38281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a16ba18e08a77a48831956a0a48fd7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToGoTo: 2
+  sceneToGoTo: 0
   canvas: {fileID: 284185074}
 --- !u!135 &977972367
 SphereCollider:
