@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scenes/- Build/1. TheShalows.unity
     guid: 01b625813bca6474c81b8402ae179179
-  - enabled: 0
+  - enabled: 1
     path: Assets/01. Scenes/- Build/2. TheCavurns.unity
     guid: c2bac9a069da2da419cc8ac5627be509
-  - enabled: 0
+  - enabled: 1
     path: Assets/01. Scenes/- Build/3. TheDepths.unity
     guid: 86a29284ed694c44e8fbdb56e3860e31
   - enabled: 1
